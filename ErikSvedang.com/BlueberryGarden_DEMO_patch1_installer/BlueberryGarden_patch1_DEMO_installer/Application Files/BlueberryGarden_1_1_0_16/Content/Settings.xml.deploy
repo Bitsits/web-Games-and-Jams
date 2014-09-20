@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<Settings>
+  <width>1024</width>
+  <height>768</height>
+  <fullscreen>false</fullscreen>
+  <music>true</music>
+  <postfx>true</postfx>
+  <useVSync>false</useVSync>
+  <museumMode>false</museumMode>
+</Settings>

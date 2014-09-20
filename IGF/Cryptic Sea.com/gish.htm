@@ -1,0 +1,304 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en-us"><head>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<link rel="StyleSheet" href="gish_files/test.css" type="text/css" media="screen">
+<link rel="shortcut icon" href="http://www.chroniclogic.com/favicon.ico">
+<script type="text/javascript" language="JavaScript">
+<!--
+if (top != self) 
+	{
+  top.location.href = location.href;
+	}
+	var parseURL=location.search.substring(1); //location.search.substring gets everything in the url starting with the ?, the (1) skips the first char (the ?)
+	var expDate = new Date();
+	if(parseURL.length>0)  //Checks if anything is left of the url (if there was anything after the ?)
+		{
+		var pairsURL=parseURL.split('?');
+
+		if(pairsURL[pairsURL.length-1].substring(0,3)== "id=")  //checks string after last ? to see if the first 3 characters are id= 
+			{
+			if (GetCookie('cl') == null)  //check for existing cl cookie, if not found set the cookie
+				{	
+				var pairs=pairsURL[pairsURL.length-1].split('=');
+				expDate.setTime(expDate.getTime() +  2592000000); //(24 * 60 * 60 * 1000 * number of days the cookie should last)
+				SetCookie('id', pairs[1], expDate);
+				}
+			if(pairsURL.length>1)	
+				{
+				var newURL=parseURL.split("?id=");
+				parseURL=newURL[0];
+				}
+			else
+				{
+				parseURL=null;
+				}
+			}
+		}
+
+	if (GetCookie('id') == null) 
+		{
+		expDate.setTime(expDate.getTime() +  2592000000); //(24 * 60 * 60 * 1000 * number of days the cookie should last)
+		SetCookie('cl', 'cl', expDate);
+		}
+
+function SetCookie (name, value) 
+	{  
+	var argv = SetCookie.arguments;  
+	var argc = SetCookie.arguments.length;  
+	var expires = (argc > 2) ? argv[2] : null;  
+	var path = (argc > 3) ? argv[3] : null;  
+	var domain = (argc > 4) ? argv[4] : null;  
+	var secure = (argc > 5) ? argv[5] : false;  
+	document.cookie = name + "=" + escape (value) + 
+	((expires == null) ? "" : ("; expires=" + expires.toGMTString())) + 
+	((path == null) ? "" : ("; path=" + path)) +  
+	((domain == null) ? "" : ("; domain=" + domain)) +    
+	((secure == true) ? "; secure" : "");
+	}
+function getCookieVal (offset) 
+	{  
+	var endstr = document.cookie.indexOf (";", offset);  
+	if (endstr == -1)    
+		endstr = document.cookie.length;  
+	return unescape(document.cookie.substring(offset, endstr));
+	}
+function GetCookie (name) 
+	{  
+	var arg = name + "=";  
+	var alen = arg.length;  
+	var clen = document.cookie.length;  
+	var i = 0;  
+	while (i < clen) 
+		{    
+		var j = i + alen;    
+		if (document.cookie.substring(i, j) == arg)      
+			return getCookieVal (j);    
+		i = document.cookie.indexOf(" ", i) + 1;    
+		if (i == 0) 
+			break;   
+		}  
+	return null;
+	}
+//-->
+</script>
+<title>Chronic Logic - Gish</title>
+</head><body class="alt">
+<div class="centered_body">
+	<table class="main" width="800" border="0" cellpadding="0" cellspacing="0">
+		<tbody><tr><td colspan="11">
+
+<map name="mymap">
+<area href="http://www.chroniclogic.com/main.htm" alt="Games" title="All Games" coords="293,65,342,78">
+<area href="http://www.chroniclogic.com/order_form.php" alt="Order" title="Order Games" coords="352,65,395,78">
+<area href="http://www.chroniclogic.com/sitemap.htm" alt="Search" title="Search Site" coords="405,65,455,78">
+<area href="http://www.chroniclogic.com/support.htm" alt="Support" title="Get Help" coords="465,65,525,78">
+<area href="http://www.chroniclogic.com/contact.htm" alt="Contact" title="Contact us" coords="535,65,590,78">
+<area href="http://www.pontifex2.com/smf/index.php" target="_blank" alt="Forums" title="Forums" coords="600,65,654,78">
+<area href="http://www.chroniclogic.com/forums.htm" alt="Links" title="Our Partners" coords="665,65,704,78">
+<area href="http://www.chroniclogic.com/newsletter.htm" alt="Newsletter" title="Sign up for our Newsletter" coords="715,65,792,78">
+
+<area href="http://www.myspace.com/chroniclogicco" title="Myspace" alt="Myspace" coords="685,6,703,25">
+<area href="http://twitter.com/Chronic_Logic" title="Twitter" alt="Twitter" coords="707,6,725,25">
+<area href="http://www.facebook.com/pages/Santa-Cruz-CA/Chronic-Logic/100274072544" title="Facebook" alt="Facebook" coords="728,6,746,25">
+<area href="http://www.youtube.com/user/ChronicLogicGames" title="YouTube" alt="YouTube" coords="750,6,768,25">
+
+</map>
+
+<img src="gish_files/header4.gif" alt="Header" usemap="#mymap" border="0"></td></tr>
+		<tr>
+			<td><img src="gish_files/left_header_border.gif" alt="" width="5" border="0" height="20"></td>
+			<td class="header_button"><a href="http://www.chroniclogic.com/gish.htm"><img src="gish_files/gish_button_a.gif" alt="Gish" title="Gish" border="0"></a></td>
+			<td class="header_button"><a href="http://www.chroniclogic.com/gish_download.htm"><img src="gish_files/freedemo.gif" alt="Free Demo" title="Free Demo" border="0"></a></td>
+			<td class="header_button"><a href="http://www.chroniclogic.com/gishorder.htm"><img src="gish_files/fullversion.gif" alt="Full Version" title="Download Full Version" border="0"></a></td>
+			<td class="header_button"><a href="http://www.chroniclogic.com/gishscreens.htm"><img src="gish_files/screenshots.gif" alt="Screenshots" title="Screenshots" border="0"></a></td>
+			<td class="header_button"><a href="http://www.chroniclogic.com/gishpatch.htm"><img src="gish_files/updates_button.gif" alt="Downloads" title="Patches" border="0"></a></td>
+			<td class="header_button"><a href="http://www.chroniclogic.com/gishlevels.htm"><img src="gish_files/downloads.gif" alt="levels" title="Levels" border="0"></a></td>
+			<td class="header_button"><a href="http://www.chroniclogic.com/gish_support.htm"><img src="gish_files/support_button.gif" alt="Support" title="Get Help" border="0"></a></td>
+			<td class="header_button" width="800"></td>
+			<td><img src="gish_files/right_header_border.gif" alt="" width="5" border="0" height="20"></td>
+		</tr>
+		<tr>
+			<td class="left_border" height="2"></td>
+			<td class="header_button_open"><img src="gish_files/button_open.gif" alt="" width="92" border="0" height="2"></td>
+			<td class="header_button_closed"></td>
+			<td class="header_button_closed"></td>
+			<td class="header_button_closed"></td>
+			<td class="header_button_closed"></td>
+			<td class="header_button_closed"></td>
+			<td class="header_button_closed"></td>
+			<td class="header_button_closed"></td>
+			<td class="right_border" height="2"></td>
+		</tr>
+	</tbody></table>
+
+<table class="main" width="800" border="0" cellpadding="0" cellspacing="0">
+		<tbody><tr><td rowspan="2" class="left_border">&nbsp;</td>
+			<td>
+				<div class="padding_fix"><div class="box_body" style="padding-bottom: 0.4em;">
+					<a href="http://www.chroniclogic.com/index.htm">Home</a> &gt; <a href="http://www.chroniclogic.com/gish.htm">Gish</a><br><br>
+
+				<img style="float: left; margin-right: 1em; margin-left: 0.4em;" src="gish_files/gish_box_big.gif" alt="Gish" align="left">
+				Gish isn't your average hero, in fact he's not your average anything... see Gish is a ball of tar.
+				A Sunday stroll with his lady friend Brea goes awry when a shadowy figure emerges from an open 
+				man hole and pulls Brea into the ground below. Following Brea's calls for help Gish suddenly 
+				finds himself in the subterranean sewers of Dross, a long forgotten city filled with 
+				twisting corridors, evil traps and some of the most demented creatures imaginable.<br>
+        <br>
+
+				With his gelatinous structure as his only means of defense Gish 
+				must follow the echoing cries of his damsel in distress deep into the earth below. What freakish creatures 
+				dwell in this subterranean land? Who is Brea's captor? And just how far down does the rabbit hole go?<br>
+				<br>
+				Life isn't easy when you're a 12 pound ball of tar...
+					<br><br>
+					<table style="margin-top: 0em;" class="nomargin" width="750" border="0" cellpadding="3" cellspacing="0">	
+						<tbody><tr><td style="width: 42px;"><center>	
+						<a href="http://www.chroniclogic.com/order_form.php?product=GISH_&amp;gift=step1"><img src="gish_files/gift.gif" alt="Gift" border="0"></a></center>
+						</td><td style="width: 330px;">
+						<a href="http://www.chroniclogic.com/order_form.php?product=GISH_&amp;gift=step1">Give Gish as a gift for download or on CD!</a>				
+						</td>
+						<td style="width: 1px;"></td>
+						<td style="width: 42px;"><center>	
+						<a href="http://www.chroniclogic.com/pontifex2order.htm"><img src="gish_files/email_icon.gif" alt="Gift" border="0"></a></center>
+						</td>
+						<td style="width: 300px;">
+						<b>Immediately after ordering Gish you will be sent a keycode and download instructions. <a href="http://www.chroniclogic.com/gishorder.htm">Read more!</a></b> 
+						</td>
+						</tr>
+					</tbody></table>
+				</div></div>
+
+				<div class="padding_fix"><div class="box_head">Gish features:</div></div>
+				<div class="padding_fix"><div class="box_body_new">
+				<table style="float: right; margin-top: -0.3em;" class="border" width="370" cellpadding="3" cellspacing="0">	
+					<tbody><tr><td colspan="2">	
+						<div class="main"><div class="highlight">Ordering Information:</div>
+
+				<div class="highlight">Cost: $19.95
+				<br>For: Windows, Linux and OSX
+				<br>Size: 43 MB download or on CD-ROM
+				<br>Developer: Chronic Logic
+				<br>Questions: <a href="http://www.chroniclogic.com/contact_form.php?section=support&amp;subject=Gish">Contact Support</a>
+				</div>
+					<table class="flat" width="100%" border="0" cellpadding="0" cellspacing="0">
+						<tbody><tr>
+						<td align="left"><a href="http://www.chroniclogic.com/gishorder.htm"><img src="gish_files/buynow.gif" alt="Buy Now" border="0"></a></td>
+						<td align="center">
+							<a href="http://www.chroniclogic.com/gish_download.htm"><img src="gish_files/linux.gif" alt="Linux" border="0"></a>
+							<a href="http://www.chroniclogic.com/gish_download.htm"><img src="gish_files/osx.gif" alt="OSX" border="0"></a>
+							<a href="http://www.chroniclogic.com/gish_download.htm"><img src="gish_files/win.gif" alt="Win" border="0"></a>
+						</td>
+						<td align="right"><a href="http://www.chroniclogic.com/gish_download.htm"><img src="gish_files/demo.gif" alt="Demo" border="0"></a></td>
+						</tr>
+					</tbody></table>
+						<center><b>Multi platform support:</b></center>
+						Gish supports Windows, Mac OS X and Linux: Buy once, and you can download and run the game on any of these systems!
+						<br>
+					</div>
+					</td>
+					</tr>
+				</tbody></table>
+
+				<b>Full Version includes:</b><br>
+				<ul class="no_indent">
+				<li>Dynamic Physics and Real-time Lighting</li>
+				<li>Destructible environment</li>
+				<li>34 Story levels</li>
+				<li>Over 20 Collection levels</li>
+				<li>6 unique VS. mode</li>
+				<li>28 different VS. levels</li>
+				<li>Many hidden "secrets"</li>
+				<li>Over 10 different types of Enemies</li>
+				<li>5 "Super Secret" Levels</li>
+				<li>Unique gameplay</li>
+				</ul>
+				<br>
+				</div></div>
+
+				<div class="padding_fix"><div class="box_head">Gish Screenshots and Videos:</div></div>
+				<div class="padding_fix"><div style="height: 300px;" class="box_body"> 
+
+
+				<table style="float: left; margin-top: -2px;" class="nomargin" border="0" cellpadding="0" cellspacing="3">
+				<tbody><tr><td><a class="plain" href="http://www.chroniclogic.com/gishscreens.htm"><img src="gish_files/gish-1s.jpg" alt="Screenshot" border="0"></a></td>
+					<td><a class="plain" href="http://www.chroniclogic.com/gishscreens.htm"><img src="gish_files/gish-2s.jpg" alt="Screenshot" border="0"></a></td>
+				</tr>
+				<tr><td><a class="plain" href="http://www.chroniclogic.com/gishscreens.htm"><img src="gish_files/gish-3s.jpg" alt="Screenshot" border="0"></a></td>
+					<td><a class="plain" href="http://www.chroniclogic.com/gishscreens.htm"><img src="gish_files/gish-4s.jpg" alt="Screenshot" border="0"></a></td>
+				</tr>
+				</tbody></table>
+
+				<div style="width: 360px; float: right;"><object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0" id="gtembed" width="360" height="294">	<param name="allowScriptAccess" value="sameDomain"> <param name="allowFullScreen" value="true"> <param name="movie" value="http://www.gametrailers.com/remote_wrap.php?mid=26214"><param name="quality" value="high"> <embed src="gish_files/remote_wrap.php" swliveconnect="true" name="gtembed" allowscriptaccess="sameDomain" allowfullscreen="true" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="360" align="middle" height="294"> </object></div>
+
+
+				</div></div>
+
+				<div class="padding_fix"><div class="box_head">Reviews, Awards and More:</div></div>
+				<div class="padding_fix"><div class="box_body">
+
+				<b>Awards</b><br>
+				<a href="http://www.igf.com/" target="NEW">2005 IGF Grand Prize (Seamus McNally Award)</a><br>
+				<a href="http://www.igf.com/" target="NEW">2005 IGF Innovation in Game Design</a><br>
+				<a href="http://www.gametunnel.com/html/section-viewarticle-74.html" target="NEW">Game Tunnel's Game of the Year</a><br>
+				<a href="http://www.gametunnel.com/html/section-viewarticle-66.html" target="NEW">Game Tunnel's Adventure Game of the Year</a><br>
+				<a href="http://www.the-underdogs.info/game.php?name=Gish" target="NEW">Home of the Underdogs Top Dog</a><br>
+
+				<br><b>Reviews</b><br>
+				<a href="http://www.gametunnel.com/html/reviews-110.html" target="NEW">Game Tunnel 100%</a><br>
+				DIY Games 100%<br>
+				<a href="http://www.gamechronicles.com/reviews/pc/gish/gish.htm" target="NEW">Game Chronicles Magazine 95%</a><br>
+				<a href="http://www.gotoandplay.it/_reviews/review.php?r=76" target="NEW">gotoandplay.it 93%</a><br>
+				<a href="http://www.gamezone.com/gzreviews/r23881.htm" target="NEW">GameZone.com 88%</a><br>
+				<a href="http://www.gamingnexus.com/Review.asp?ID=519" target="NEW">Gaming Nexus 87%</a><br>
+
+				<br><b>Comments</b><br>
+				"A simple idea can be elaborated upon with terrific results"&nbsp;-&nbsp;<a href="http://www.nytimes.com/2004/06/10/technology/circuits/10game.html" target="_blank">New York Times</a><br><br>
+				"A great sticky glob of gaming goodness... the freshest platformer i've played this year"&nbsp;-&nbsp;PC Gamer UK 85%<br><br>
+				"definitely an indie game that you should check out"&nbsp;-&nbsp;<a href="http://www.gamersinfo.net/index.php?art/id:201" target="_blank">Gamers Info</a><br><br>
+"Gish is worth the $20 without any question... it provides more fun and
+quality than many other games that cost twice the money"&nbsp;-&nbsp;<a href="http://www.gamerswithjobs.com/index.php?module=News&amp;func=display&amp;sid=939" target="_blank">Gamers with Jobs</a>
+
+					</div></div>
+	
+				<div class="padding_fix"><div class="box_head">Requirements:</div></div>
+				<div class="padding_fix"><div class="box_body">	
+
+
+				<b>Minimum system requirements:</b><br>
+				<ul class="no_indent">
+				<li>Windows 98/ME/2000/XP/Vista/7, Linux or OSX 10.1+</li>
+				<li>AMD,Intel or G3 1000+ Mhz processor</li> 
+				<li>OpenGL Compatible 3D Graphics adaptor (ATI, NVIDIA, Intel, etc.) with 32 mb of video memory</li>
+				<li>256MB of memory</li>
+				</ul>
+				<br>
+				<b>Recommended system requirements:</b><br>
+				<ul class="no_indent">
+				<li>AMD, Intel, or G4 1500+ Mhz processor</li> 
+				<li>OpenGL Compatible 3D Graphics adaptor (ATI, NVIDIA, Intel, etc.) with 64 mb of video memory</li>
+				<li>256MB of memory</li>
+				</ul>	
+
+			</div></div> 
+		</td>	<td rowspan="2" class="right_border">&nbsp;</td>
+		</tr>
+		<tr><td colspan="3" class="bottom_border"></td></tr>
+	</tbody></table>
+<div class="footer" align="center"><a href="http://www.chroniclogic.com/main.htm">Games</a> - <a href="http://www.chroniclogic.com/support.htm">Support</a> - <a href="http://www.chroniclogic.com/about.htm">About Us</a> - <a href="http://www.chroniclogic.com/sitemap.htm">Sitemap</a> - <a href="http://www.chroniclogic.com/not_found.htm">Search</a> - <a href="http://www.chroniclogic.com/privacy.htm">Privacy</a></div>
+<div class="footer2">© Copyright 2002-2009 Chronic Logic LLC All rights reserved</div>
+
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script src="gish_files/ga.js" type="text/javascript"></script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-9813958-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body></html>

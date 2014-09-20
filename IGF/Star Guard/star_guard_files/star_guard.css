@@ -1,0 +1,112 @@
+a {border: 0px none #ffffff;}
+
+a:active {border: 0px none #ffffff;}
+
+a:link {border: 0px none #ffffff;}
+
+img {
+	border:none;
+	margin:auto;
+	display:block;
+	padding:0px;
+}
+
+div.thumbnailContainer {
+	height:104px;
+	padding-top:8px;
+	margin-left:76px;
+}
+
+div.thumbnail {
+	border: 4px solid #ffff00;
+	height:96px;
+	width:136px;
+	margin:0px;
+	margin-right:8px;
+	float:left;
+}
+
+div.thumbnail:hover {
+	border: 4px solid #ffffff;
+}
+
+div.thumbnail img {
+	display:inline;
+}
+
+div.screenshot {
+	border: 4px solid #ffff00;
+	height:432px;
+	width:768px;
+}
+
+div.downloadContainer {
+	height:28px;
+	padding-top:8px;
+	margin-left:312px;
+}
+
+div.download {
+	border: 4px solid #ffff00;
+	margin:0px;
+	margin-right:8px;
+	float:left;
+	color:#000000;
+}
+
+div.download:hover {
+	border: 4px solid #ffffff;
+}
+
+div.download:active {
+	border: 4px solid #ffffff;
+}
+
+object#video {
+	border: 4px solid #ffff00;
+	display:block;
+	margin:0 auto;
+	height:233px;
+	width:400px;
+	text-align:center;
+}
+
+div.center {
+	margin:0 auto;
+}
+
+div.center_inner {
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-top:-350px;
+	margin-left:-384px;
+}
+
+div.center_inner_download {
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-top:-64px;
+	margin-left:-384px;
+}
+
+body {
+	margin:0 auto;
+	text-align:center;
+	background-color:#000000;
+}
+
+div#thumbnails {
+	width:768px;
+}
+
+div#title {
+	margin-bottom:12px;
+	margin-top:4px;
+}
+
+div#message {
+	margin-bottom:12px;
+	margin-top:12px;
+}

@@ -1,0 +1,32 @@
+body {
+background:#d33737;
+}
+
+a:link {
+color:#FF3333;
+}
+
+a:visited {
+color:#FF3333;
+}
+
+a:active {
+color:#FF5454;
+}
+
+a:hover {
+color:#000;
+}
+
+a,h2 a:hover,h3 a:hover {
+color:#545454;
+text-decoration:none;
+}
+
+#footer {
+background-image:url('http://eriksvedang.files.wordpress.com/2009/05/footer.jpg');
+}
+
+#page {
+background-image:url('http://eriksvedang.files.wordpress.com/2009/05/body.jpg');
+}

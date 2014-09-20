@@ -1,0 +1,132 @@
+<!--
+a:link {
+  color: #dfb614;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #dfb614;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #666;
+}
+
+body {
+	margin: 0;
+	font-family: Georgia, Arial, Helvetica, sans-serif;
+	text-align: center;
+	background: #fff url(../images/main-bg.jpg) repeat;
+}
+
+#header {
+	margin: 0;
+	width: 100%;
+	height: 220px;
+	text-align: center;
+	background: #000 url(../images/header-bg.jpg) repeat-x;
+}
+
+#nav {
+	margin: 0 110px 0 110px;
+	height: 300px;
+	text-align: center;
+}
+
+#right-nav {
+	margin: 20px;
+	float: right;
+	width: 200px;
+	height: 400px;
+	color: #000;
+	background: #fff;
+}
+
+#content {
+	margin: 0 auto;;
+	width: 840px;
+	height-min: 1000px;
+	text-align: left;
+	color: #ddd;
+	background: #000 url(../images/content-bg.jpg) repeat;
+}
+
+#content h2 {
+	font-size: 18px;
+	font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	margin-left: 120px;
+	margin-right: 120px;
+	border-bottom: 1px #fff solid;
+}
+
+#content h3 {
+	font-size: 18px;
+	font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+	margin-left: 120px;
+	margin-right: 120px;
+}
+
+#content p {
+	font-size: 15px;
+	margin-left: 120px;
+	margin-right: 120px;
+}
+
+#content small {
+	font-size: 10px;
+	margin-left: 120px;
+	margin-right: 120px;
+}
+
+#info {
+	color: #17110c;
+	background: url(../images/info-bg.jpg) top center repeat-y;
+}
+
+#info a:link {
+  color: #8c2400;
+  text-decoration: none;
+}
+
+#info a:visited {
+  color: #8c2400;
+  text-decoration: none;
+}
+
+#info a:hover {
+  color: #666;
+}
+
+#info p {
+	margin-left: 140px;
+	margin-right: 140px;
+}
+
+p.quote {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+#info small {
+	font-size: 10px;
+	margin-left: 140px;
+	margin-right: 140px;
+}
+
+#info h2 {
+	font-size: 18px;
+	font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	margin-left: 140px;
+	margin-right: 140px;
+	border-bottom: 1px #17110c solid;
+}
+
+#copy {
+	margin: 40px 120px 0 120px;
+	font-size: 10px;
+	text-align: center;
+}
+

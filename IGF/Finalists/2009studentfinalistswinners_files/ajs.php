@@ -1,0 +1,11 @@
+var OX_831bc0db = '';
+OX_831bc0db += "<"+"div id=\'ox_4511c0505e86f8568b7a4a370c32c9b6\' style=\'display: inline;\'><"+"img src=\'http://69.59.137.121/openx/www/images/1x1.gif\' alt=\'\' title=\'\' border=\'0\' /><"+"/div>\n";
+OX_831bc0db += "<"+"script type=\'text/javascript\'><"+"!--// <"+"![CDATA[\n";
+OX_831bc0db += "var ox_swf = new FlashObject(\'http://69.59.137.121/openx/www/images/284fded23bc6e18971a2e44e0df64600.swf\', \'Advertisement\', \'160\', \'600\', \'9\');\n";
+OX_831bc0db += "ox_swf.addVariable(\'clickTARGET\', \'_blank\');\n";
+OX_831bc0db += "ox_swf.addVariable(\'clickTAG\', \'http%3A%2F%2F69.59.137.121%2Fopenx%2Fwww%2Fdelivery%2Fck.php%3Foaparams%3D2__bannerid%3D316__zoneid%3D6__cb%3Df76e55ba73__oadest%3Dhttp%253A%252F%252Fwww.E3Expo.com\');\n";
+OX_831bc0db += "ox_swf.addParam(\'allowScriptAccess\',\'always\');\n";
+OX_831bc0db += "ox_swf.write(\'ox_4511c0505e86f8568b7a4a370c32c9b6\');\n";
+OX_831bc0db += "if (ox_swf.installedVer.versionIsValid(ox_swf.getAttribute(\'version\'))) { document.write(\"<"+"div id=\'beacon_f76e55ba73\' style=\'position: absolute; left: 0px; top: 0px; visibility: hidden;\'><"+"img src=\'http://69.59.137.121/openx/www/delivery/lg.php?bannerid=316&amp;campaignid=167&amp;zoneid=6&amp;loc=http%3A%2F%2Fwww.igf.com%2F2009studentfinalistswinners.html&amp;referer=http%3A%2F%2Fwww.igf.com%2F2009finalistswinners.html&amp;cb=f76e55ba73\' width=\'0\' height=\'0\' alt=\'\' style=\'width: 0px; height: 0px;\' /><"+"/div>\"); }\n";
+OX_831bc0db += "// ]]> --><"+"/script>\n";
+document.write(OX_831bc0db);

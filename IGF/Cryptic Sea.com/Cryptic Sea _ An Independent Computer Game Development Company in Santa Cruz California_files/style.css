@@ -1,0 +1,457 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+
+body 
+{
+	background-color: rgb(0,0,30);
+	background-image: url(images/bg.png);
+	background-repeat:repeat-x;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	
+}
+
+/*  Fonts 
+*******************************************************************************/
+
+h1
+{
+	color:rgb(205,180,134);
+	font-size:1.2em;
+	margin-top:-5px;
+}
+
+	h1 a
+	{
+		text-decoration: none;
+		color:rgb(205,180,134);
+	}
+
+h4
+{
+	margin-bottom:-5px;
+}
+
+h5
+{
+	
+	margin-bottom:-8px;
+}
+
+p
+{
+	color:rgb(205,180,134);
+	font-size:.8em;
+	
+}
+
+
+
+a {
+	color:rgb(205,180,134);
+	font-style:normal;
+	text-decoration:none;
+	padding:0 1px;
+	font-weight:bold;
+	}
+ 
+a:hover {
+	color:rgb(46,109,118);
+	font-style:normal;
+	text-decoration:none;
+	}
+
+
+img 
+{ 
+	border: none;
+}
+
+img:active
+{ 
+	border: none;
+}
+
+/* CSS tags */
+
+/*  Container (All the content for the page is inside this - sets the page I have created)
+*******************************************************************************/
+#container /* Holds the whole page's content, image & text  */
+{
+	margin: 0 auto;
+	width: 1022px;
+	/*background-color: rgb(0,0,30);*/
+	background-image: url(images/bg_cs3.png);
+	background-repeat: no-repeat;
+}
+
+/*  Banner
+*******************************************************************************/
+#logo /*cryptic sea logo*/
+{
+	position: relative;
+	width: 255px;
+	height: 177px;
+	left: 35px;
+	top:0px;
+	
+}
+
+/*  Links (Section for links)
+*******************************************************************************/
+
+#nav-menu
+{
+
+	margin-top: -30px;
+	width:600px;
+	float: right;
+	
+}
+
+	#nav-menu ul
+	{
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	} 
+	
+	#nav-menu li
+	{
+		float: left;
+		margin: 0 0.06em;
+		
+	} 
+	
+	#nav-menu li a
+	{
+		background: url(images/bg_nav.png) no-repeat;
+		height: 2em;
+		line-height: 2em;
+		float: left;
+		width: 90px;
+		text-decoration: none;
+		text-align: center;
+		color:rgb(205,180,134);
+		font-weight:bold;
+	}
+	
+	#nav-menu li a:hover
+	{
+		background: url(images/bg_nav_over.png) no-repeat;
+		
+	} 
+	
+	#nav-menu li a.current
+	{
+		background: url(images/bg_nav_over.png) no-repeat;
+		
+	}  
+	
+
+#nav-sub
+{
+	
+	clear: none;
+	width: 96px;
+	left:175px;
+	
+	position: relative;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	
+}
+
+	#nav-sub ul
+	{
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	} 
+	
+	#nav-sub li
+	{
+		float: left;
+		margin: 0 0.15em;
+		
+	} 
+	
+	#nav-sub li a
+	{
+	
+	float: left;
+	width: 110px;
+	text-decoration: none;
+	text-align: left;
+	color:rgb(205,180,134);
+	font-weight:bold;
+	padding: 2px 0px 2px 5px;		
+	} 
+	
+	#nav-sub li a:hover
+	{
+		background: url(images/rounded.png) left;
+		background-color: rgb(0,0,30);
+	} 
+	
+	#nav-sub li a:active
+	{
+		
+		background-color: rgb(0,0,30);
+	} 
+	
+	#nav-sub li a.current
+	{
+		
+		background-color: rgb(0,0,30);
+	} 
+
+#text ul
+	{
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		font-size: .9em;
+	} 
+	
+	#nav-sub2
+{
+	
+	clear: none;
+	width: 50px;
+	position: relative;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size:10px;
+	
+}
+
+	#nav-sub2 ul
+	{
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	} 
+	
+	#nav-sub2 li
+	{
+		float: left;
+		margin: 0 1em;
+		
+	} 
+	
+	#nav-sub2 li a
+	{
+		float: left;
+		width: 100px;
+		font-weight: normal;
+		text-decoration: none;
+		text-align: left;
+		color:rgb(205,180,134);
+		padding: 2px 0px 2px 5px;		
+	} 
+	
+	#nav-sub2 li a:hover
+	{
+		background-color: rgb(0,0,30);
+	} 
+	
+	#nav-sub2 li a:active
+	{
+		
+		background-color: rgb(0,0,30);
+	} 
+	
+	#nav-sub2 li a.current
+	{
+		
+		background-color: rgb(0,0,30);
+	} 
+
+/*  Content (Holds all information for page)
+*******************************************************************************/
+
+
+#text_body
+{
+	clear: right;
+	width:614px;
+	height: 600px;
+	margin-left: 290px;
+	color:rgb(205,180,134);
+	background-image: url(images/bg_text2.png);
+	background-repeat: no-repeat;
+}
+
+#rssfeed_bg
+{
+	width: 570px;
+	height: 176px;
+	margin:auto;
+	background-image: url(images/bg_rss2.png);
+	background-repeat: no-repeat;
+
+}
+	#rssfeed_bg a
+	{
+		color:rgb(46,109,118);
+		font-size:.6em;
+		float:right;
+		
+	}
+
+#rssfeed
+{
+	
+	width:520px;
+	margin: auto;
+	margin-top:10px;
+	padding:10px;
+	
+}
+
+#rss_scroll
+{
+	float:right;
+	width:15px;
+	margin-top:-36px;
+}
+
+
+#rss_scroll_up
+{
+	float:right;
+	width:10px;
+	
+}
+
+#rss_scroll_down
+{
+	float:right;
+	width:10px;
+	
+}
+
+.title
+{
+	margin: auto;
+	width:565px;
+	color:rgb(205,180,134);
+	padding-top: 20px;
+}
+
+
+#title
+{
+	margin: auto;
+	width:565px;
+	color:rgb(205,180,134);
+	padding-top: 20px;
+}
+
+#text
+{
+	margin: auto;
+	width:565px;
+	color:rgb(205,180,134);
+	padding-top: 20px;
+	font-size: .9em;
+}
+
+#text_about
+{
+	margin: auto;
+	width:565px;
+	padding-top: 20px;
+	color:rgb(205,180,134);
+	font-size: .9em;
+}
+
+.infobox_ss
+{
+	clear:both;
+}
+
+.infobox_ss
+{
+	margin: 0px;
+}
+#about_left
+{
+	
+	float:left;
+	width: 250px;
+	
+}
+
+#about_right
+{
+	
+	float:right;
+	width: 250px;
+	
+}
+
+.info_left
+{
+	
+	float:left;
+	padding: 10px;
+	width: 240px;
+	height:210px;
+}
+
+.info_right
+{
+	
+	float:right;
+	padding: 10px;
+	width: 240px;
+	height:210px;
+}
+
+/*  Forms
+*******************************************************************************/
+
+
+/* input 
+{
+ 	background-color: rgb(205,180,134);
+	border-color: rgb(0,0,30);
+	
+}
+
+textarea 
+{
+ 	background-color: rgb(205,180,134);
+	border-color: rgb(0,0,30);
+}
+*/
+
+/*  Footer
+*******************************************************************************/
+
+#footer
+{
+	clear: both;
+	width:614px;
+	height: 70px;
+	color:rgb(205,180,134);
+	background-image: url(images/bg_footer.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#footer p
+{
+	padding: 30px;
+	text-decoration: none;
+	text-align: center;
+	text-align:center;
+	font-size:.6em;
+}
+
+#footer a
+{
+	color:rgb(46,109,118);
+}

@@ -1,0 +1,196 @@
+div.centered_body {width: 100%;
+		     	margin-left: auto;
+    			margin-right: auto;
+    			width: 800px}
+
+.header_button {background-color: #474441}
+.header_button_open {background-color: #FFFFFF}
+.header_button_closed {background-color: #000000}
+
+img.boxshot {float: left; margin-right: 1em; margin-left: -0.5em; border-style: none}
+img.boxshot2 {float: left; margin-right: 2em; margin-left: -0.5em; border-style: none}
+
+td.right_border {background-image: url(http://www.chroniclogic.com/image/header/right_header_border.jpg); background-repeat: repeat-y; width: 5px}
+td.left_border {background-image: url(http://www.chroniclogic.com/image/header/left_header_border.jpg); background-repeat: repeat-y; width: 5px}
+.bottom_border {background-image: url(http://www.chroniclogic.com/image/header/bottom_border.gif); background-repeat: repeat-x; height: 5px}
+
+/*
+BODY { 
+	background-color: #FFFFFF;
+	margin-top: 0;
+  background-image: url(image/bg.jpg); 
+}*/
+
+BODY.alt_old { 
+	background-color: #FAFAFA;
+	margin-top: 0;
+}
+
+BODY.alt { 
+	background-color: #DDDDDD;
+	margin-top: 16px;
+
+/*	overflow: scroll; */
+/*  margin-left: 5%; */
+/*	margin-right: 5%; */
+/*  background-image: url(image/bg.jpg);	*/
+}
+
+div.padding_fix_old {width: 800px;} 
+
+div.box_head_old {height: 1.4em; background: #C5C5C5; clear: left; margin-top: 0; margin-bottom: 0; padding-left: 6px; padding-top: 0.1em; 
+							padding-right: 6px; font-weight: bold} /* border: 1px solid black */
+div.box_head_menu_old {height: 1.4em; background: #C5C5C5; clear: left; margin-top: 0; margin-bottom: 0; padding-left: 6px; padding-top: 0.1em; 
+							padding-right: 0em; font-weight: bold; border: 2px solid black} 
+div.box_body_old {background: #EFEFEF; margin-top: 0; margin-bottom: 0; padding-left: 6px; padding-top: 0.4em; padding-bottom: 0.4em; 
+							padding-right: 6px; } /* border: 1px solid black*/
+
+
+
+div.padding_fix {width: 790px;} 
+
+div.box_head {height: 1.4em; background: #44413F; clear: left; margin-top: 0; margin-bottom: 0; padding-left: 25px; padding-top: 0.1em;
+							padding-right: 25px; font-weight: bold; color: #FFFFFF;} /* border: 1px solid black */
+div.box_head_menu {height: 1.4em; background: #4D4A47; clear: left; margin-top: 0; margin-bottom: 0; padding-left: 6px; padding-top: 0.1em; 
+							padding-right: 0em; font-weight: bold; border: 2px solid black} 
+div.box_body {background: #FFFFFF; margin-top: 0; margin-bottom: 0; padding-left: 16px; padding-top: 0.4em; padding-bottom: 0.4em; 
+							padding-right: 16px; } /* border: 1px solid black*/
+div.box_body_compact {background: #FFFFFF; margin-top: 0; margin-bottom: 0; padding-left: 4px; padding-top: 0.4em; padding-bottom: 0.4em; 
+							padding-right: 4px; }
+div.box_body_new {background: #FFFFFF; margin-top: 0; margin-bottom: 0; padding-left: 20px; padding-top: 0.5em; padding-bottom: 0.4em; 
+							padding-right: 20px; }
+
+
+div.clear    {clear: both; margin-top: 0; margin-bottom: 0; padding-left: 6px; padding-top: 0.4em; padding-bottom: 0.4em; 
+							padding-right: 6px; }
+
+
+.page_menu { 
+font-family: "Arial", Arial, mono; font-size: 13px; color: #000000; text-align: center; vertical-align: middle; font-weight: bold;  
+background: #B5B5B5; background-image: none; 
+height: 16px
+}
+
+.page_content { 
+font-family: "Arial", Arial, mono; font-size: 13px; color: #000000; text-align: left;   
+background: #D5D5D5; background-image: none; 
+}
+
+/*  a:link { color: rgb(0, 0, 153) }   for unvisited links */
+/*  a:visited { color: rgb(153, 0, 153) }  for visited links */
+/*  a:active { color: rgb(255, 0, 102) }  when link is clicked */
+/*  a:hover { color: rgb(255,255, 255) }  when mouse is over link */
+
+A.plain { text-decoration: none }
+
+.main { font-family: "Arial", Arial, mono; font-size: 13px; color: #000000; text-align: left; text-decoration: none}
+.important { font-family: "Arial", Arial, mono; font-size: 14px; color: #000000; text-align: left; text-decoration: none}
+.important_big { font-family: "Arial", Arial, mono; font-size: 16px; color: #000000; text-align: left; text-decoration: none}
+.important_med { font-family: "Arial", Arial, mono; font-size: 16px; color: #000000; text-align: left; text-decoration: none}
+.extra_important { font-family: "Arial", Arial, mono; font-size: 18px; color: #000000; text-align: left; text-decoration: underline}
+.highlight_big { font-family: "Arial", Arial, mono; font-size: 16px; color: #000000; text-align: left; font-weight: bold}
+.highlight_med { font-family: "Arial", Arial, mono; font-size: 14px; color: #000000; text-align: left; font-weight: bold}
+.highlight { font-family: "Arial", Arial, mono; font-size: 13px; color: #000000; text-align: left; font-weight: bold}
+.small { font-family: "Arial", Arial, mono; font-size: 10px; color: #000000; text-align: left; text-decoration: none}
+.subfooter {background: #FFFFFF; margin-top: 0; margin-bottom: 0; padding-left: 20px; padding-top: 0.5em; padding-bottom: 0.4em; 
+							padding-right: 20px; font-family: "Arial", Arial, mono; font-size: 15px; color: #000000; text-align: center; text-decoration: none}
+.footer {  font-family: "Arial", Arial, mono; font-size: 15px; color: #000000; text-align: center; text-decoration: none}
+.footer2 {  font-family: "Arial", Arial, mono; font-size: 15px; text-align: center; text-decoration: none}
+.error { font-family: "Arial", Arial, mono; font-size: 13px; color: #FF0000; text-align: left; text-decoration: none}
+.smallish { font-family: "Arial", Arial, mono; font-size: 12px; color: #000000; text-align: left; text-decoration: none; text-indent: 30px}
+.strike {text-decoration: line-through;}
+
+.support_field { 
+font-family: "Arial", Arial, mono; font-size: 13px; color: #000000; text-align: left; vertical-align: top; font-weight: bold; 
+background: #CCCCCC; background-image: none;
+width: 160px;
+}
+
+.support_header { 
+font-family: "Arial", Arial, mono; font-size: 13px; color: #000000; text-align: left; font-weight: bold; 
+background: #9C9C9C; background-image: none;
+}
+
+.page_header { 
+font-family: "Arial", Arial, mono; font-size: 14px; color: #000000; text-align: left; vertical-align: middle; font-weight: bold;  
+background: #789EC2; background-image: none; 
+height: 16px
+}
+
+table.flat { 
+font-family: "Arial", Arial, mono; font-size: 13px; color: #000000; text-align: left; text-decoration: none;
+margin: 3px 0px 10px 0px;
+padding: 0px;
+border: 0px;
+}
+
+table.nomargin { 
+font-family: "Arial", Arial, mono; font-size: 13px; color: #000000; text-align: left; text-decoration: none;
+margin: 0px 0px 0px 0px;
+padding: 0px;
+border: 0px;
+}
+
+table.border { 
+font-family: "Arial", Arial, mono; font-size: 13px; color: #000000; text-align: left; text-decoration: none;
+margin: 3px 1px 0px 0px;
+padding: 0px;
+border: 2px;
+border-style: ridge;
+}
+
+ul.no_indent {
+margin: 0px 0px 0px 17px;
+padding: 0px;
+border: 0px;
+}
+
+ol.standard {
+list-style-type: decimal;
+}
+
+ul.no_indent2 {
+margin: 0px 0px 0px 1.5em;
+padding: 0px;
+border: 0px;
+list-style: square;
+}
+
+ul.sub {
+margin: 0px 0px 0px 1em;
+padding: 0px;
+border: 0px;
+list-style: disc;
+}
+ul.sub_sub {
+margin: 0px 0px 0px 1em;
+padding: 0px;
+border: 0px;
+list-style: circle;
+}
+
+form.compact {
+margin: 0px;
+padding: 0px;
+border: 0px;
+border-width: 0px;
+}
+
+.middle { vertical-align: middle; }
+
+img.middle { 
+vertical-align: middle;
+border: 0px;
+}
+
+.left { 
+float: left; 
+border: 0px;
+margin: 1px 10px 1px 1px;
+}
+
+td.center { text-align: center;}
+td.three { width: 33%; }
+td.four { width: 25%; }
+
+td.spacer { height: 18px;}

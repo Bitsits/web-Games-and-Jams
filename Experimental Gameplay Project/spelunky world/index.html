@@ -1,0 +1,180 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="description" content="The official site of Spelunky - the randomly-generated action adventure!">
+<meta name="keywords" content="spelunky, game, games, video game, video games, mossmouth, Derek Yu">
+<meta name="author" content="Derek Yu">
+<link rel="icon" type="image/vnd.microsoft.icon" href="http://spelunkyworld.com/favicon.ico">
+<link rel="stylesheet" type="text/css" href="index_files/spelunky.css">
+
+<title>Spelunky World</title>
+
+<script type="text/javascript">
+<!--
+
+	function roll(img_name, img_src)
+	{
+		document[img_name].src = img_src;
+	}
+
+//-->
+</script>
+
+</head><body>
+
+<div id="header">
+	<a href="http://spelunkyworld.com/index.html"><img src="index_files/sw-logo.gif" alt="Spelunky World" border="0"></a>
+</div>
+
+<div id="content">
+	<div style="text-align: center;"><img src="index_files/header-bottom.gif" alt=""></div>
+
+	<div id="nav">
+		<div style="padding: 0pt; width: 200px; float: left;">
+			<img src="index_files/nav-top.jpg" alt="">
+			<a href="http://spelunkyworld.com/original.html" onmouseover="roll('pc', 'images/button-pc-open.jpg')" onmouseout="roll('pc', 'images/button-pc.jpg')"><img src="index_files/button-pc.jpg" name="pc" alt="Download for Windows!" border="0"></a>
+			<a href="http://spelunkyworld.com/xbla.html" onmouseover="roll('xbla', 'images/button-xbla-open.jpg')" onmouseout="roll('xbla', 'images/button-xbla.jpg')"><img src="index_files/button-xbla.jpg" name="xbla" alt="" border="0"></a>
+			<img src="index_files/button-extras.jpg" alt="">
+		</div>
+		<div style="width: 400px; float: right;">
+			<a href="http://mossmouth.com/forums/"><img style="border: medium none ;" src="index_files/nav-splash.jpg" alt=""></a>
+		</div>
+	</div>
+	
+	<div id="info">
+	<div style="text-align: center;"><img src="index_files/info-bg-top.jpg" alt=""></div>
+		<h2><img src="index_files/goldidol-xbla.png" alt="">May 7th, 2010 - Here be the musics!</h2>
+		<img style="border: 1px solid rgb(0, 0, 0); margin: 0pt 140px 5px 10px; float: right;" src="index_files/phlog-blackcat-small.jpg">
+		<p>It's time for another introduction, it would seem. My name is Eirik, but I'm known to many as "chiptune artist" Phlogiston.</p>
+		<p><strong>I will be supplying music and sound design for Spelunky XBLA.</strong></p>
+		<p><a href="http://www.strotch.net/">You're welcome to check out my website.</a></p>
+		<p>I've
+been working on this score for several months now, and it's been a
+blast! I'm not going to write a ton about it, at least not at this
+point, but I wanted to show off a little bit of it, to give you guys an
+idea of what it'll sound like.</p>
+		<p><a href="http://www.derekyu.com/spelunky/Spelunky_teaser.mp3">TEASER MP3 - medley of various songs from the game</a></p>
+		<p>Basically,
+I wanted the soundtrack to be a mix of retro-sounding videogame music
+and more modern-sounding music utilizing actual instruments. I guess I
+imagined it would sound like a mixture of FM-based music (arcade, SEGA
+Genesis/Mega Drive, 80's music), sample/tracker based music (Amiga/90's
+demoscene) and just regular pop/rock (70's/80's/90's). Hopefully you
+guys can tell me if it came through or not.</p>
+		<p>More as it progresses!</p>
+		<small style="float: right;"><a href="http://mossmouth.com/forums/index.php?topic=1113.0">Discuss this update in the forums...</a></small>
+		<br>
+		<h2><img src="index_files/goldidol-xbla.png" alt="">Mar 28th, 2010 - Lighting the Way</h2>
+		<p>Derek
+wasn't lying in that last post. Things are indeed moving along quite
+well as we continue to work on the Xbox 360 version. It has been quite
+exciting to see the project evolve from just a few sprites displaying
+on the screen to a game that is unmistakably Spelunky.</p>
+		<p>I
+guess this is supposed to be my official introduction or something! I'm
+Andy, the guy helping Derek with Spelunky. As there are only two of us,
+I'm wearing many hats on the project, but one of my main jobs is as
+graphics programmer. </p>
+		<p>I thought it would be kind of neat to
+give a quick run-down of how the dynamic lighting works in Spelunky.
+This isn't going to be too technical because 1) I'm not sure how
+interesting that would actually be; and 2) I'm not sure how accurate I
+would be explaining the technical aspect. (I mean really, I did spend
+the last five years as a reclusive wooden toy designer...)</p>
+		<div style="text-align: center;"><img src="index_files/normals-news.jpg" alt="Spelunky XBLA Normal Maps" vspace="10" border="0" hspace="10"></div>
+		<p>First,
+the normal maps are rendered to a texture. For those not in the know,
+the normal map tilts the surface of each pixel so the light will bounce
+off them at different angles. So the lavender color you see above
+indicates a flat surface facing the screen, while all the colored edges
+indicate different tilts at different angles.</p>
+		<p>If you are
+wondering why there isn't much detail in Spelunky Man, it's because the
+graphics card actually generates simple normal maps for all the active
+entities in the game. This not only saves time (because we don't have
+to generate normal maps for every frame of animation of all the
+sprites) but it also ensures that the lighting won't make the surface
+details of each sprite hard to see. It does allow for a nice rim
+lighting effect on the sprites, so they still are able to blend nicely
+into the scene.</p>
+		<p><a href="http://mossmouth.com/forums/index.php?topic=1016.msg30804#msg30804">Continue reading, dear friend...</a></p>
+		<small style="float: right;"><a href="http://mossmouth.com/forums/index.php?topic=1016.0">Discuss this update in the forums...</a></small>
+		<br>
+		<h2><img src="index_files/goldidol-xbla.png" alt="">Mar 8th, 2010 - Spelunky XBLA Screenshots!</h2>
+		<div style="text-align: center;"><a href="http://spelunkyworld.com/xbla.html"><img src="index_files/spelunky-xbla-01-news.jpg" alt="Spelunky XBLA Screenshot 1" vspace="10" border="0" hspace="10"></a></div>
+		<p>We've
+been working hard over here at Mossmouth Headquarters (a mossy stump
+fit for two or maybe three!). No slackin'! And we think things are
+coming along pretty good.</p>
+		<p>Good enough, in fact, that I'd like to show off some of what we've been doing on <a href="http://spelunkyworld.com/xbla.html">Spelunky for Xbox Live Arcade</a>!
+As you can see, we're spending a lot of time making the game look new
+and beautiful for XBLA. Mr. Andy Hull is helping me add all kinds of
+new graphical effects to make the game pop on your t.v. screen. Bombs
+will send shadows bouncing off of the walls, and if, for example,
+rubble falls into a small lake, it will send ripples dancing across the
+water's surface.</p>
+		<p>Those are just some of things that are
+making us so excited about this version of Spelunky. We're doing
+everything we can to make it feel new, and totally made for the Xbox
+360... without losing any of the original game's depth. Please let us
+know what you think about our work, and keep checking back, because now
+that we're on a roll (like a boulder) I'll be updating the site more
+often! See ya!</p>
+		<small style="float: right;"><a href="http://mossmouth.com/forums/index.php?topic=945.0">Discuss this update in the forums...</a></small>
+		<br>
+		<h2><img src="index_files/goldidol.gif" alt="">Dec 25th, 2009 - Version 1.1, Source Code Released!</h2>
+		<a href="http://mossmouth.com/forums/index.php?topic=514.0"><img style="border: 1px solid rgb(0, 0, 0); margin: 0pt 140px 5px 10px; float: right;" src="index_files/spelunkyman01-thumb.jpg" alt="Spelunky Man"></a>
+		<p>Happy
+Holidays, everyone! I said I would release the source code before the
+end of 2009, didn't I? Not only that, but version 1.1 is out as well.
+This release has a lot of bug-fixes in it. It also adds some extended
+stat-tracking. If you've ever wondered how many times you've been
+killed by arrow traps or how many damsels you've saved, now you can
+find out - just open up "stats.txt" after exiting the game. Both v1.1
+and the source can be downloaded <a href="http://spelunkyworld.com/original.html">here</a>.</p>
+		<p>Things
+are going very well with Xbox 360 development - I'm really enjoying
+working on this platform and I'm excited about what you guys will
+think. Unfortunately, that's all I can say about it for now! Rest
+assured that the new year will bring more news on this front.</p>
+		<p>In the meantime, enjoy 1.1 and also the source code!  I can't wait to see what you guys come up with.  Please use the <a href="http://mossmouth.com/forums/index.php?board=6.0">Spelunky Source forums</a> to discuss it!</p>
+		<small style="float: right;"><a href="http://mossmouth.com/forums/index.php?topic=517.0">Discuss this update in the forums...</a></small>
+		<br>
+		<h2><img src="index_files/goldidol.gif" alt="">Sep 1st, 2009 - Welcome to Spelunky World!</h2>
+		<p>Hey there! Welcome to the new Spelunky website! Methinks it was about time to move the game to its own digs on the web.</p>
+		<p>Aside
+from kicking off the new site, I'm pleased to make some very exciting
+announcements here today. First off, version 1.0 is finally ready!
+That's right, the game can finally come out of its "beta" status. This
+version has a lot of bug fixes and some new surprises, so <a href="http://spelunkyworld.com/original.html">check it out</a>.</p>
+		<p>Secondly,
+and this one's a big one - Spelunky is making its way to Xbox Live
+Arcade in 2010! Yep, and it's going to be much more than a straight
+port of the PC game - I'm planning on stuffing it with new graphics,
+audio, and other features for XBLA users. With all the other great
+independent games on XBLA or coming to it, I'm hopeful that Spelunky
+will feel right at home there. I think it's a cool platform and I'm
+excited about what I'll be able to do to make the game special.</p>
+		<p>Regarding
+the inevitable question of whether the XBLA flavor of Spelunky will
+also be available on PC or any other systems: I don't have any plans
+for it right now. The original Spelunky doesn't need replacing, in my
+opinion, and I'll continue to support it as a free title. Not only
+that, but I'm planning on opening up the source code before the end of
+the year so that people can modify the game to their heart's content.
+For now, head over to the <a href="http://mossmouth.com/forums/index.php?board=3.0">Spelunky forums</a> to discuss the game and share levels!</p>
+		<p>Thanks
+to everyone who supported the game thus far - I've been overwhelmed by
+the response and where it's taken the project. As always, please give
+me your feedback on everything. Stay tuned to this site and <a href="http://twitter.com/mossmouth">my Twitter</a> if you want to be up-to-date. Happy Spelunky-ing!</p>
+		<small style="float: right;"><a href="http://mossmouth.com/forums/index.php?topic=2.0">Discuss this update in the forums...</a></small>
+		<div style="text-align: center;"><img src="index_files/info-bg-bottom.jpg" alt=""></div>
+	</div>
+	<div id="copy"><a href="http://www.mossmouth.com/"><img style="border: medium none ;" src="index_files/mossmouth-logo.jpg" alt="Mossmouth"></a><br>© 2009 <a href="http://www.mossmouth.com/">Mossmouth, LLC</a></div>
+	<div style="text-align: center;"><img src="index_files/footer.gif" alt=""></div>
+</div>
+
+</body></html>

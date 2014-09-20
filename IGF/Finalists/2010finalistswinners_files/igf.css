@@ -1,0 +1,63 @@
+/* Main */
+body {background:#000000;}
+td {color: #666666; font-family: Verdana, Arial, Helvetica, sans-serif; font-size:10px;}
+
+/* Top navigation */
+.nav {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 9px; color: #FFFFFF;}
+.nav a:link, .nav a:visited  {color: #999999; text-decoration: none;} 
+.nav a:hover {color: #ee7700; text-decoration: underline;}
+
+/* sponsor and announcement - success side */
+.sponsor {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; color: #cccccc;}
+.sponsor a {color:#e81a24; text-decoration: none;} 
+.sponsor a:link  {color: #999999; text-decoration: none;} 
+.sponsor a:hover {color: #ee7700; text-decoration: underline;}
+.sponsor a:active {color: #999999; text-decoration: none;}
+.sponsor a:visited {color: #ee7700; text-decoration: none;}
+
+
+/* Center content */
+.style2 {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; color: #666666;}
+.style2 a {color: #e81a24; text-decoration: none;} 
+.style2 a:link  {color: #86000a; text-decoration: none;} 
+.style2 a:hover {color: #ee7700; text-decoration: underline;}
+.style2 a:active {color: #86000a; text-decoration: none;}
+.style2 a:visited {color: #ee7700; text-decoration: underline;}
+
+/* Center content header*/
+.style2header {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #86000a;
+	font-weight:bold;
+}
+
+/* Center content body copy */
+.style3 {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; color: #999999;}
+.style3 a {color: #999999; text-decoration: underline;} 
+.style3 a:link  {color: #999999; text-decoration: underline;} 
+.style3 a:hover {color: #ee7700; text-decoration: underline;}
+.style3 a:active {color: #999999; text-decoration: none;}
+.style3 a:visited {color: #ee7700; text-decoration: none;}
+
+/* Sponsor content */
+.style4 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #b3d1e1;
+}
+
+/* LINK STYLES */
+td.bodycontent a:link,
+td.bodycontent a:visited {
+	color: #86000a;
+	text-decoration: none;
+}
+
+td.bodycontent a:hover {
+	text-decoration: underline;
+}
+
+p.dashbreak {
+	border-bottom: 1px dashed #eee;
+}

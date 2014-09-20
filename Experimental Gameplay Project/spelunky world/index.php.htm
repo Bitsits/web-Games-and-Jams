@@ -1,0 +1,1178 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+	
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	<meta name="description" content="Spelunky v1.1 (and Source)!">
+	<meta name="keywords" content="PHP, MySQL, bulletin, board, free, open, source, smf, simple, machines, forum">
+	<script language="JavaScript" type="text/javascript" src="index.php_files/script.js"></script>
+	<script language="JavaScript" type="text/javascript">
+		var smf_theme_url = "http://forums.tigsource.com/Themes/tigsource";
+		var smf_images_url = "http://forums.tigsource.com/Themes/tigsource/images";
+		var smf_scripturl = "http://forums.tigsource.com/index.php";
+		var smf_iso_case_folding = false;
+		var smf_charset = "ISO-8859-1";
+	</script>
+	<title>Spelunky v1.1 (and Source)!</title>
+	<link rel="stylesheet" type="text/css" href="index.php_files/style.css">
+	<link rel="stylesheet" type="text/css" href="index.php_files/print.css" media="print">
+	<link rel="help" href="http://forums.tigsource.com/index.php?action=help" target="_blank">
+	<link rel="search" href="http://forums.tigsource.com/index.php?action=search">
+	<link rel="contents" href="http://forums.tigsource.com/index.php">
+	<link rel="alternate" type="application/rss+xml" title="TIGSource Forums - RSS" href="http://forums.tigsource.com/index.php?type=rss;action=.xml">
+	<link rel="prev" href="http://forums.tigsource.com/index.php?topic=4017.0;prev_next=prev">
+	<link rel="next" href="http://forums.tigsource.com/index.php?topic=4017.0;prev_next=next">
+	<link rel="index" href="http://forums.tigsource.com/index.php?board=6.0">
+
+	<script language="JavaScript" type="text/javascript">
+		var current_header = false;
+
+		function shrinkHeader(mode)
+		{
+			document.cookie = "upshrink=" + (mode ? 1 : 0);
+			document.getElementById("upshrink").src = smf_images_url + (mode ? "/upshrink2.gif" : "/upshrink.gif");
+
+			document.getElementById("upshrinkHeader").style.display = mode ? "none" : "";
+			document.getElementById("upshrinkHeader2").style.display = mode ? "none" : "";
+
+			current_header = mode;
+		}
+	</script>
+		<script language="JavaScript" type="text/javascript">
+			var current_header_ic = false;
+
+			function shrinkHeaderIC(mode)
+			{
+				document.cookie = "upshrinkIC=" + (mode ? 1 : 0);
+				document.getElementById("upshrink_ic").src = smf_images_url + (mode ? "/expand.gif" : "/collapse.gif");
+
+				document.getElementById("upshrinkHeaderIC").style.display = mode ? "none" : "";
+
+				current_header_ic = mode;
+			}
+		</script>
+</head><body id="page_bg">
+	<div id="wrapper">
+	
+		<div id="header-l">
+			<div id="header-r">
+				<div id="header">
+					<div id="logo-bg"><a href="http://forums.tigsource.com/index.php" title=""></a></div><div id="news">TIGSource has an IRC channel now!<br><br><b>Server:</b> irc.esper.net<br><b>Room:</b> #tigIRC</div>
+				</div>
+			</div>
+		</div>
+		
+		<div id="shadow-l">
+		<div id="shadow-r">
+			<div id="mainbody">
+				<div id="toolbar">
+					<div id="nav">
+						
+	<ul><li><a href="http://forums.tigsource.com/index.php">Home</a></li><li><a href="http://www.tigsource.com/">TIGSource</a></li><li><a href="http://forums.tigsource.com/index.php?action=help">Help</a></li><li><a href="http://forums.tigsource.com/index.php?action=search">Search</a></li><li><a href="http://forums.tigsource.com/index.php?action=login">Login</a></li><li><a href="http://forums.tigsource.com/index.php?action=register">Register</a></li></ul>
+					</div>
+				</div>
+				
+				<div id="showcase">
+	    			
+   <div class="userinfo">	
+							Welcome, <b>Guest</b>. Please <a href="http://forums.tigsource.com/index.php?action=login">login</a> or <a href="http://forums.tigsource.com/index.php?action=register">register</a>.<br>Did you miss your <a href="http://forums.tigsource.com/index.php?action=activate">activation email?</a>
+							<script language="JavaScript" type="text/javascript" src="index.php_files/sha1.js"></script>
+
+							<form action="http://forums.tigsource.com/index.php?action=login2" method="post" accept-charset="ISO-8859-1" style="margin: 4px 0pt;" onsubmit="hashLoginPassword(this, '10514f1ad8d54c517a29c353c2a0f004');">
+									<input value="bitsits@gmail.com" name="user" style="margin-bottom: 4px;" size="10" type="text">
+									<input name="passwrd" style="margin-bottom: 4px;" size="10" type="password"><br>
+									<select name="cookielength">
+										<option value="60">1 Hour</option>
+										<option value="1440">1 Day</option>
+										<option value="10080">1 Week</option>
+										<option value="43200">1 Month</option>
+										<option value="-1" selected="selected">Forever</option>
+									</select>
+									<input value="Login" type="submit">
+
+									<input name="hash_passwrd" value="" type="hidden">
+					</form>Login with username, password and session length<br><br>	</div>
+	         <div class="searchfield">
+					<form action="http://forums.tigsource.com/index.php?action=search2" method="post" style="margin: 4px 0pt;">
+							<input name="search" size="30" style="margin-bottom: 4px;" type="text">&nbsp;
+							<input name="submit" value="Search" style="margin-bottom: 4px;" type="submit"><br>
+							<a href="http://forums.tigsource.com/index.php?action=search;advanced">Advanced search</a>
+							<input name="advanced" value="0" type="hidden">
+							<input name="topic" value="4017" type="hidden">
+					</form><br>					
+					<b>384975</b> Posts in <b>12715</b> Topics- by <span style="white-space: nowrap;"><b>18245</b> Members</span> -
+							Latest Member: <b> <a href="http://forums.tigsource.com/index.php?action=profile;u=18387">alfa1fvt</a></b><br><br>June 04, 2010, 12:58:14 PM
+							</div>
+							<div class="clr"></div>
+  
+				 </div>
+<a name="top"></a>
+<a name="msg123221"></a>
+<div><span class="pathway"><a href="http://forums.tigsource.com/index.php" class="pathway">TIGSource Forums</a><img src="index.php_files/arrow.png" style="margin: 0pt 12px;" alt=""><a href="http://forums.tigsource.com/index.php#4" class="pathway">Community</a><img src="index.php_files/arrow.png" style="margin: 0pt 12px;" alt=""><a href="http://forums.tigsource.com/index.php?board=6.0" class="pathway">Feedback</a><img src="index.php_files/arrow.png" style="margin: 0pt 12px;" alt=""> (Moderator: <a href="http://forums.tigsource.com/index.php?action=profile;u=238" title="Board Moderator">Guert</a>)Spelunky v1.1 (and Source)!</span></div>
+<div class="nav" style="margin-bottom: 2px;"> <a href="http://forums.tigsource.com/index.php?topic=4017.0;prev_next=prev#new">« previous</a> <a href="http://forums.tigsource.com/index.php?topic=4017.0;prev_next=next#new">next »</a></div>
+<table class="tborder" style="margin-bottom: 5px;" width="100%" border="0" cellpadding="0" cellspacing="0">
+	<tbody><tr class="catbg">
+		<td class="middletext">Pages: [<b>1</b>] <a class="navPages" href="http://forums.tigsource.com/index.php?topic=4017.15">2</a> <a class="navPages" href="http://forums.tigsource.com/index.php?topic=4017.30">3</a> <b> ... </b><a class="navPages" href="http://forums.tigsource.com/index.php?topic=4017.4500">301</a> </td>
+		<td class="postbuttons" align="right">
+			
+			<table cellpadding="0" cellspacing="0">
+				<tbody><tr>
+					<td><a href="http://forums.tigsource.com/index.php?action=printpage;topic=4017.0" target="_blank"><img src="index.php_files/print.gif" alt="Print" border="0"></a></td>
+				</tr>
+			</tbody></table>
+		</td>
+	</tr>
+</tbody></table>
+<table class="tborder" style="border-bottom: 0pt none;" width="100%" border="0" cellpadding="3" cellspacing="0">
+		<tbody><tr class="catbg3">
+				<td style="padding-left: 6px;" width="2%" valign="middle">
+						<img src="index.php_files/veryhot_post.gif" alt="" align="bottom">
+				</td>
+				<td width="13%"> Author</td>
+				<td style="padding-left: 6px;" id="top_subject" width="85%" valign="middle">
+						Topic: Spelunky v1.1 (and Source)! &nbsp;(Read 656008 times)
+				</td>
+		</tr>
+</tbody></table>
+<form action="http://forums.tigsource.com/index.php?action=quickmod2;topic=4017.0" method="post" accept-charset="ISO-8859-1" name="quickModForm" id="quickModForm" style="margin: 0pt;" onsubmit="return in_edit_mode == 1 ? modify_save('10514f1ad8d54c517a29c353c2a0f004') : confirm('Are you sure you want to do this?');">
+<table class="bordercolor" width="100%" border="0" cellpadding="0" cellspacing="0">
+	<tbody><tr><td style="padding: 1px 1px 0pt;">
+		<table width="100%" border="0" cellpadding="3" cellspacing="0">
+			<tbody><tr><td class="windowbg">
+				<table style="table-layout: fixed;" width="100%" cellpadding="5" cellspacing="0">
+					<tbody><tr>
+						<td rowspan="2" style="overflow: hidden;" width="16%" valign="top">
+							<b><a href="http://forums.tigsource.com/index.php?action=profile;u=2" title="View the profile of Derek">Derek</a></b>
+							<div class="smalltext">
+								Bastich<br>
+								Administrator<br>
+								Level 10<br>
+								<img src="index.php_files/staradmin.gif" alt="*" border="0"><img src="index.php_files/staradmin.gif" alt="*" border="0"><img src="index.php_files/staradmin.gif" alt="*" border="0"><img src="index.php_files/staradmin.gif" alt="*" border="0"><img src="index.php_files/staradmin.gif" alt="*" border="0"><img src="index.php_files/staradmin.gif" alt="*" border="0"><br><br>
+								<div style="overflow: auto; width: 100%;"><img src="index.php_files/av-thunderlegs.jpg" alt="" class="avatar" border="0"></div><br>
+								
+								
+								
+								<br>
+								<a href="http://forums.tigsource.com/index.php?action=profile;u=2"><img src="index.php_files/profile_sm.gif" alt="View Profile" title="View Profile" border="0"></a>
+								<a href="http://www.bit-blot.com/" title="Bit Blot" target="_blank"><img src="index.php_files/www_sm.gif" alt="WWW" border="0"></a>
+								<a href="mailto:yu.derek@gmail.com"><img src="index.php_files/email_sm.gif" alt="Email" title="Email" border="0"></a>
+							</div>
+						</td>
+						<td width="85%" height="100%" valign="top">
+							<table width="100%" border="0"><tbody><tr>
+								<td valign="middle"><a href="http://forums.tigsource.com/index.php?topic=4017.msg123221#msg123221"><img src="index.php_files/xx.gif" alt="" border="0"></a></td>
+								<td valign="middle">
+									<div style="font-weight: bold;" id="subject_123221">
+										<a href="http://forums.tigsource.com/index.php?topic=4017.msg123221#msg123221">Spelunky v1.1 (and Source)!</a>
+									</div>
+									<div class="smalltext">« <b> on:</b> December 21, 2008, 06:42:48 AM »</div></td>
+								<td class="postbuttons" align="right">
+								</td>
+							</tr></tbody></table>
+							<hr class="hrcolor" width="100%" size="1">
+							<div class="post"><span style="color: purple;"><span style="font-size: 18pt; line-height: 1.3em;"><b>Spelunky v1.0</b></span></span><br><br><img src="index.php_files/spelunky-pc-screen.png" alt="" border="0"><br><br><span style="font-size: 14pt; line-height: 1.3em;"><span style="color: red;"><b>Latest build:</b></span><br><b><a href="http://www.derekyu.com/games/spelunky_1_1.zip" target="_blank">http://www.derekyu.com/games/spelunky_1_1.zip</a></b> (9.5 MB)</span><br><br>Spelunky has its own website now: <b><a href="http://spelunkyworld.com/" target="_blank">http://spelunkyworld.com/</a></b><br><br>&nbsp;<img src="index.php_files/toast.gif" alt="Beer!" border="0"><br><br>--- ORIGINAL POST ---<br><br><i>Submitted for the approval of The Midnight Society, I call this story</i>... SPELUNKY! &nbsp;This is my latest game release and my first Game Maker game.<br><br>Probably
+the easiest way to describe Spelunky is that it's (kind of) like La
+Mulana meets Nethack - every time you play the levels, items, monsters,
+and so forth, are all procedurally-generated. &nbsp;And the terrain is
+destructible and there are quite a few ways in which the various game
+elements can interact with one another.<br><br>My goal was to create a
+fast-paced platform game that had the kind of tension, re-playability,
+and variety of a roguelike. &nbsp;In roguelikes, the gameplay tells the
+story, and I wanted to give Spelunky that type of a feeling... but make
+the player rely on their reflexes rather than their brain (or knowledge
+of what 50 billion command keys do!). &nbsp;If there's a best of both
+worlds, that's what I was trying to go for.<br><br>But yeah, I'll leave
+it to you to decide whether I got the mix right or failed miserably!
+&nbsp;The game is not quite v1.0, but it has most of the elements that
+I wanted to get in. &nbsp;Hope you enjoy it, and I am eagerly awaiting
+your feedback, whether it's good, bad, or frickin' beautiful. &nbsp;I'm
+crossing my fingers that it doesn't break!<br><br>Many, many thanks to
+the beta testers, without whom this would not have been possible!
+&nbsp;Seriously, they contributed a ton of feedback, bug reports, and
+ideas to the game. &nbsp;If it wasn't for the constant tears in their
+eyes from my cruel lashes, I might have thought they even enjoyed it a
+bit. &nbsp;And thanks, ChevyRay, for letting me use your nifty
+screen-scaling code. &nbsp;Once I got it to work, it worked pretty
+beautifully.<br><br>K, that's all! &nbsp;Feedback away! <img src="index.php_files/toast.gif" alt="Beer!" border="0"></div>
+						</td>
+					</tr>
+					<tr>
+						<td class="smalltext" width="85%" valign="bottom">
+							<table style="table-layout: fixed;" width="100%" border="0"><tbody><tr>
+								<td colspan="2" class="smalltext" width="100%">
+								</td>
+							</tr><tr>
+								<td class="smalltext" id="modified_123221" valign="bottom">
+									« <i>Last Edit: December 25, 2009, 09:08:12 PM by Derek</i> »
+								</td>
+								<td class="smalltext" align="right" valign="bottom">
+									<img src="index.php_files/ip.gif" alt="" border="0">
+									Logged
+								</td>
+							</tr></tbody></table>
+						</td>
+					</tr>
+				</tbody></table>
+			</td></tr>
+		</tbody></table>
+	</td></tr>
+	<tr><td style="padding: 1px 1px 0pt;">
+		<a name="msg123223"></a>
+		<table width="100%" border="0" cellpadding="3" cellspacing="0">
+			<tbody><tr><td class="windowbg2">
+				<table style="table-layout: fixed;" width="100%" cellpadding="5" cellspacing="0">
+					<tbody><tr>
+						<td rowspan="2" style="overflow: hidden;" width="16%" valign="top">
+							<b><a href="http://forums.tigsource.com/index.php?action=profile;u=1772" title="View the profile of kYn">kYn</a></b>
+							<div class="smalltext">
+								Level 10<br>
+								<img src="index.php_files/starmod.gif" alt="*" border="0"><img src="index.php_files/starmod.gif" alt="*" border="0"><img src="index.php_files/starmod.gif" alt="*" border="0"><img src="index.php_files/starmod.gif" alt="*" border="0"><img src="index.php_files/starmod.gif" alt="*" border="0"><br><br>
+								<div style="overflow: auto; width: 100%;"><img src="index.php_files/index.gif" alt="" class="avatar" border="0"></div><br>
+								
+								
+								
+								<br>
+								<a href="http://forums.tigsource.com/index.php?action=profile;u=1772"><img src="index.php_files/profile_sm.gif" alt="View Profile" title="View Profile" border="0"></a>
+								<a href="http://kynquinhe.deviantart.com/" title="i really need a proper website" target="_blank"><img src="index.php_files/www_sm.gif" alt="WWW" border="0"></a>
+								<a href="mailto:jjmborges@gmail.com"><img src="index.php_files/email_sm.gif" alt="Email" title="Email" border="0"></a>
+							</div>
+						</td>
+						<td width="85%" height="100%" valign="top">
+							<table width="100%" border="0"><tbody><tr>
+								<td valign="middle"><a href="http://forums.tigsource.com/index.php?topic=4017.msg123223#msg123223"><img src="index.php_files/xx.gif" alt="" border="0"></a></td>
+								<td valign="middle">
+									<div style="font-weight: bold;" id="subject_123223">
+										<a href="http://forums.tigsource.com/index.php?topic=4017.msg123223#msg123223">Re: Spelunky!</a>
+									</div>
+									<div class="smalltext">« <b>Reply #1 on:</b> December 21, 2008, 06:48:37 AM »</div></td>
+								<td class="postbuttons" align="right">
+								</td>
+							</tr></tbody></table>
+							<hr class="hrcolor" width="100%" size="1">
+							<div class="post">Downloading at the speed of light<br>Will provide feedback later</div>
+						</td>
+					</tr>
+					<tr>
+						<td class="smalltext" width="85%" valign="bottom">
+							<table style="table-layout: fixed;" width="100%" border="0"><tbody><tr>
+								<td colspan="2" class="smalltext" width="100%">
+								</td>
+							</tr><tr>
+								<td class="smalltext" id="modified_123223" valign="bottom">
+								</td>
+								<td class="smalltext" align="right" valign="bottom">
+									<img src="index.php_files/ip.gif" alt="" border="0">
+									Logged
+								</td>
+							</tr></tbody></table>
+						</td>
+					</tr>
+				</tbody></table>
+			</td></tr>
+		</tbody></table>
+	</td></tr>
+	<tr><td style="padding: 1px 1px 0pt;">
+		<a name="msg123233"></a>
+		<table width="100%" border="0" cellpadding="3" cellspacing="0">
+			<tbody><tr><td class="windowbg">
+				<table style="table-layout: fixed;" width="100%" cellpadding="5" cellspacing="0">
+					<tbody><tr>
+						<td rowspan="2" style="overflow: hidden;" width="16%" valign="top">
+							<b><a href="http://forums.tigsource.com/index.php?action=profile;u=390" title="View the profile of Mr. Yes">Mr. Yes</a></b>
+							<div class="smalltext">
+								Level 4<br>
+								<img src="index.php_files/star.gif" alt="*" border="0"><img src="index.php_files/star.gif" alt="*" border="0"><img src="index.php_files/star.gif" alt="*" border="0"><img src="index.php_files/star.gif" alt="*" border="0"><br><br>
+								<div style="overflow: auto; width: 100%;"><img src="index.php_files/and.png" alt="" class="avatar" border="0"></div><br>
+								
+								
+								
+								<br>
+								<a href="http://forums.tigsource.com/index.php?action=profile;u=390"><img src="index.php_files/profile_sm.gif" alt="View Profile" title="View Profile" border="0"></a>
+								<a href="http://www.thrompd.hinchy.us/" title="THROMPD" target="_blank"><img src="index.php_files/www_sm.gif" alt="WWW" border="0"></a>
+								<a href="mailto:mryesofyes@gmail.com"><img src="index.php_files/email_sm.gif" alt="Email" title="Email" border="0"></a>
+							</div>
+						</td>
+						<td width="85%" height="100%" valign="top">
+							<table width="100%" border="0"><tbody><tr>
+								<td valign="middle"><a href="http://forums.tigsource.com/index.php?topic=4017.msg123233#msg123233"><img src="index.php_files/xx.gif" alt="" border="0"></a></td>
+								<td valign="middle">
+									<div style="font-weight: bold;" id="subject_123233">
+										<a href="http://forums.tigsource.com/index.php?topic=4017.msg123233#msg123233">Re: Spelunky!</a>
+									</div>
+									<div class="smalltext">« <b>Reply #2 on:</b> December 21, 2008, 07:25:11 AM »</div></td>
+								<td class="postbuttons" align="right">
+								</td>
+							</tr></tbody></table>
+							<hr class="hrcolor" width="100%" size="1">
+							<div class="post">Very neat, just started playing!<br><br>Unfortunately,
+I got an error after pressing C, while carrying the gray block and
+having thrown the "rope" or whatever two times.<br>___________________________________________<br>ERROR in<br>action number 10<br>of&nbsp; Step Event<br>for object oPlayer1:<br><br>Error in code at line 23:<br>&nbsp; &nbsp; &nbsp; &nbsp;if (holdItem.type == "Bow")<br><br>at position 19: Unknown variable type<br><br>I actually got this error three times, it was very easy to replicate.</div>
+						</td>
+					</tr>
+					<tr>
+						<td class="smalltext" width="85%" valign="bottom">
+							<table style="table-layout: fixed;" width="100%" border="0"><tbody><tr>
+								<td colspan="2" class="smalltext" width="100%">
+								</td>
+							</tr><tr>
+								<td class="smalltext" id="modified_123233" valign="bottom">
+								</td>
+								<td class="smalltext" align="right" valign="bottom">
+									<img src="index.php_files/ip.gif" alt="" border="0">
+									Logged
+								</td>
+							</tr></tbody></table>
+							<hr class="hrcolor" width="100%" size="1">
+							<div class="signature"><img src="index.php_files/glitchu.png" alt="" border="0"></div>
+						</td>
+					</tr>
+				</tbody></table>
+			</td></tr>
+		</tbody></table>
+	</td></tr>
+	<tr><td style="padding: 1px 1px 0pt;">
+		<a name="msg123237"></a>
+		<table width="100%" border="0" cellpadding="3" cellspacing="0">
+			<tbody><tr><td class="windowbg2">
+				<table style="table-layout: fixed;" width="100%" cellpadding="5" cellspacing="0">
+					<tbody><tr>
+						<td rowspan="2" style="overflow: hidden;" width="16%" valign="top">
+							<b><a href="http://forums.tigsource.com/index.php?action=profile;u=2" title="View the profile of Derek">Derek</a></b>
+							<div class="smalltext">
+								Bastich<br>
+								Administrator<br>
+								Level 10<br>
+								<img src="index.php_files/staradmin.gif" alt="*" border="0"><img src="index.php_files/staradmin.gif" alt="*" border="0"><img src="index.php_files/staradmin.gif" alt="*" border="0"><img src="index.php_files/staradmin.gif" alt="*" border="0"><img src="index.php_files/staradmin.gif" alt="*" border="0"><img src="index.php_files/staradmin.gif" alt="*" border="0"><br><br>
+								<div style="overflow: auto; width: 100%;"><img src="index.php_files/av-thunderlegs.jpg" alt="" class="avatar" border="0"></div><br>
+								
+								
+								
+								<br>
+								<a href="http://forums.tigsource.com/index.php?action=profile;u=2"><img src="index.php_files/profile_sm.gif" alt="View Profile" title="View Profile" border="0"></a>
+								<a href="http://www.bit-blot.com/" title="Bit Blot" target="_blank"><img src="index.php_files/www_sm.gif" alt="WWW" border="0"></a>
+								<a href="mailto:yu.derek@gmail.com"><img src="index.php_files/email_sm.gif" alt="Email" title="Email" border="0"></a>
+							</div>
+						</td>
+						<td width="85%" height="100%" valign="top">
+							<table width="100%" border="0"><tbody><tr>
+								<td valign="middle"><a href="http://forums.tigsource.com/index.php?topic=4017.msg123237#msg123237"><img src="index.php_files/xx.gif" alt="" border="0"></a></td>
+								<td valign="middle">
+									<div style="font-weight: bold;" id="subject_123237">
+										<a href="http://forums.tigsource.com/index.php?topic=4017.msg123237#msg123237">Re: Spelunky!</a>
+									</div>
+									<div class="smalltext">« <b>Reply #3 on:</b> December 21, 2008, 07:32:10 AM »</div></td>
+								<td class="postbuttons" align="right">
+								</td>
+							</tr></tbody></table>
+							<hr class="hrcolor" width="100%" size="1">
+							<div class="post">Hm!&nbsp;
+The testers have gotten this error before and I keep thinking I fixed
+it - what's the exact sequence of moves you're making to make this
+happen?</div>
+						</td>
+					</tr>
+					<tr>
+						<td class="smalltext" width="85%" valign="bottom">
+							<table style="table-layout: fixed;" width="100%" border="0"><tbody><tr>
+								<td colspan="2" class="smalltext" width="100%">
+								</td>
+							</tr><tr>
+								<td class="smalltext" id="modified_123237" valign="bottom">
+								</td>
+								<td class="smalltext" align="right" valign="bottom">
+									<img src="index.php_files/ip.gif" alt="" border="0">
+									Logged
+								</td>
+							</tr></tbody></table>
+						</td>
+					</tr>
+				</tbody></table>
+			</td></tr>
+		</tbody></table>
+	</td></tr>
+	<tr><td style="padding: 1px 1px 0pt;">
+		<a name="msg123240"></a>
+		<table width="100%" border="0" cellpadding="3" cellspacing="0">
+			<tbody><tr><td class="windowbg">
+				<table style="table-layout: fixed;" width="100%" cellpadding="5" cellspacing="0">
+					<tbody><tr>
+						<td rowspan="2" style="overflow: hidden;" width="16%" valign="top">
+							<b><a href="http://forums.tigsource.com/index.php?action=profile;u=390" title="View the profile of Mr. Yes">Mr. Yes</a></b>
+							<div class="smalltext">
+								Level 4<br>
+								<img src="index.php_files/star.gif" alt="*" border="0"><img src="index.php_files/star.gif" alt="*" border="0"><img src="index.php_files/star.gif" alt="*" border="0"><img src="index.php_files/star.gif" alt="*" border="0"><br><br>
+								<div style="overflow: auto; width: 100%;"><img src="index.php_files/and.png" alt="" class="avatar" border="0"></div><br>
+								
+								
+								
+								<br>
+								<a href="http://forums.tigsource.com/index.php?action=profile;u=390"><img src="index.php_files/profile_sm.gif" alt="View Profile" title="View Profile" border="0"></a>
+								<a href="http://www.thrompd.hinchy.us/" title="THROMPD" target="_blank"><img src="index.php_files/www_sm.gif" alt="WWW" border="0"></a>
+								<a href="mailto:mryesofyes@gmail.com"><img src="index.php_files/email_sm.gif" alt="Email" title="Email" border="0"></a>
+							</div>
+						</td>
+						<td width="85%" height="100%" valign="top">
+							<table width="100%" border="0"><tbody><tr>
+								<td valign="middle"><a href="http://forums.tigsource.com/index.php?topic=4017.msg123240#msg123240"><img src="index.php_files/xx.gif" alt="" border="0"></a></td>
+								<td valign="middle">
+									<div style="font-weight: bold;" id="subject_123240">
+										<a href="http://forums.tigsource.com/index.php?topic=4017.msg123240#msg123240">Re: Spelunky!</a>
+									</div>
+									<div class="smalltext">« <b>Reply #4 on:</b> December 21, 2008, 07:37:05 AM »</div></td>
+								<td class="postbuttons" align="right">
+								</td>
+							</tr></tbody></table>
+							<hr class="hrcolor" width="100%" size="1">
+							<div class="post">Here's the exact state when it happens:<br><br><img src="index.php_files/screenshotly9.png" alt="" border="0"><br><br>It
+happens right at the beginning here. I jump down, kill the enemy, throw
+the rope two times, pick up the item, and then press C.</div>
+						</td>
+					</tr>
+					<tr>
+						<td class="smalltext" width="85%" valign="bottom">
+							<table style="table-layout: fixed;" width="100%" border="0"><tbody><tr>
+								<td colspan="2" class="smalltext" width="100%">
+								</td>
+							</tr><tr>
+								<td class="smalltext" id="modified_123240" valign="bottom">
+								</td>
+								<td class="smalltext" align="right" valign="bottom">
+									<img src="index.php_files/ip.gif" alt="" border="0">
+									Logged
+								</td>
+							</tr></tbody></table>
+							<hr class="hrcolor" width="100%" size="1">
+							<div class="signature"><img src="index.php_files/glitchu.png" alt="" border="0"></div>
+						</td>
+					</tr>
+				</tbody></table>
+			</td></tr>
+		</tbody></table>
+	</td></tr>
+	<tr><td style="padding: 1px 1px 0pt;">
+		<a name="msg123246"></a>
+		<table width="100%" border="0" cellpadding="3" cellspacing="0">
+			<tbody><tr><td class="windowbg2">
+				<table style="table-layout: fixed;" width="100%" cellpadding="5" cellspacing="0">
+					<tbody><tr>
+						<td rowspan="2" style="overflow: hidden;" width="16%" valign="top">
+							<b><a href="http://forums.tigsource.com/index.php?action=profile;u=4" title="View the profile of Alec">Alec</a></b>
+							<div class="smalltext">
+								Global Moderator<br>
+								Level 10<br>
+								<img src="index.php_files/stargmod.gif" alt="*" border="0"><img src="index.php_files/stargmod.gif" alt="*" border="0"><img src="index.php_files/stargmod.gif" alt="*" border="0"><img src="index.php_files/stargmod.gif" alt="*" border="0"><img src="index.php_files/stargmod.gif" alt="*" border="0"><img src="index.php_files/stargmod.gif" alt="*" border="0"><br><br>
+								<div style="overflow: auto; width: 100%;"><img src="index.php_files/alec-pic-sm-02.jpg" alt="" class="avatar" border="0"></div><br>
+								
+								
+								
+								<br>
+								<a href="http://forums.tigsource.com/index.php?action=profile;u=4"><img src="index.php_files/profile_sm.gif" alt="View Profile" title="View Profile" border="0"></a>
+								<a href="http://www.bit-blot.com/" title="Bit-Blot" target="_blank"><img src="index.php_files/www_sm.gif" alt="WWW" border="0"></a>
+							</div>
+						</td>
+						<td width="85%" height="100%" valign="top">
+							<table width="100%" border="0"><tbody><tr>
+								<td valign="middle"><a href="http://forums.tigsource.com/index.php?topic=4017.msg123246#msg123246"><img src="index.php_files/xx.gif" alt="" border="0"></a></td>
+								<td valign="middle">
+									<div style="font-weight: bold;" id="subject_123246">
+										<a href="http://forums.tigsource.com/index.php?topic=4017.msg123246#msg123246">Re: Spelunky!</a>
+									</div>
+									<div class="smalltext">« <b>Reply #5 on:</b> December 21, 2008, 07:50:12 AM »</div></td>
+								<td class="postbuttons" align="right">
+								</td>
+							</tr></tbody></table>
+							<hr class="hrcolor" width="100%" size="1">
+							<div class="post">This game is awesome.&nbsp; <img src="index.php_files/toast.gif" alt="Beer!" border="0"></div>
+						</td>
+					</tr>
+					<tr>
+						<td class="smalltext" width="85%" valign="bottom">
+							<table style="table-layout: fixed;" width="100%" border="0"><tbody><tr>
+								<td colspan="2" class="smalltext" width="100%">
+								</td>
+							</tr><tr>
+								<td class="smalltext" id="modified_123246" valign="bottom">
+								</td>
+								<td class="smalltext" align="right" valign="bottom">
+									<img src="index.php_files/ip.gif" alt="" border="0">
+									Logged
+								</td>
+							</tr></tbody></table>
+							<hr class="hrcolor" width="100%" size="1">
+							<div class="signature"><a href="http://bit.ly/5iKX7U" target="_blank">Who is IA?</a> | <a href="http://infiniteammo.ca/blog/tag/marian/" target="_blank">Marian Mondays</a></div>
+						</td>
+					</tr>
+				</tbody></table>
+			</td></tr>
+		</tbody></table>
+	</td></tr>
+	<tr><td style="padding: 1px 1px 0pt;">
+		<a name="msg123248"></a>
+		<table width="100%" border="0" cellpadding="3" cellspacing="0">
+			<tbody><tr><td class="windowbg">
+				<table style="table-layout: fixed;" width="100%" cellpadding="5" cellspacing="0">
+					<tbody><tr>
+						<td rowspan="2" style="overflow: hidden;" width="16%" valign="top">
+							<b><a href="http://forums.tigsource.com/index.php?action=profile;u=2" title="View the profile of Derek">Derek</a></b>
+							<div class="smalltext">
+								Bastich<br>
+								Administrator<br>
+								Level 10<br>
+								<img src="index.php_files/staradmin.gif" alt="*" border="0"><img src="index.php_files/staradmin.gif" alt="*" border="0"><img src="index.php_files/staradmin.gif" alt="*" border="0"><img src="index.php_files/staradmin.gif" alt="*" border="0"><img src="index.php_files/staradmin.gif" alt="*" border="0"><img src="index.php_files/staradmin.gif" alt="*" border="0"><br><br>
+								<div style="overflow: auto; width: 100%;"><img src="index.php_files/av-thunderlegs.jpg" alt="" class="avatar" border="0"></div><br>
+								
+								
+								
+								<br>
+								<a href="http://forums.tigsource.com/index.php?action=profile;u=2"><img src="index.php_files/profile_sm.gif" alt="View Profile" title="View Profile" border="0"></a>
+								<a href="http://www.bit-blot.com/" title="Bit Blot" target="_blank"><img src="index.php_files/www_sm.gif" alt="WWW" border="0"></a>
+								<a href="mailto:yu.derek@gmail.com"><img src="index.php_files/email_sm.gif" alt="Email" title="Email" border="0"></a>
+							</div>
+						</td>
+						<td width="85%" height="100%" valign="top">
+							<table width="100%" border="0"><tbody><tr>
+								<td valign="middle"><a href="http://forums.tigsource.com/index.php?topic=4017.msg123248#msg123248"><img src="index.php_files/xx.gif" alt="" border="0"></a></td>
+								<td valign="middle">
+									<div style="font-weight: bold;" id="subject_123248">
+										<a href="http://forums.tigsource.com/index.php?topic=4017.msg123248#msg123248">Re: Spelunky!</a>
+									</div>
+									<div class="smalltext">« <b>Reply #6 on:</b> December 21, 2008, 07:57:00 AM »</div></td>
+								<td class="postbuttons" align="right">
+								</td>
+							</tr></tbody></table>
+							<hr class="hrcolor" width="100%" size="1">
+							<div class="post">Thanks,
+Mr. Yes, I finally got it!&nbsp; It crashes when you are carrying an
+item, cycling, and have no bombs or ropes.&nbsp; Fixed now in the link
+above.&nbsp; And here's a fixed exe:<br><br><a href="http://www.derekyu.com/games/spelunky_0_96_1.exe" target="_blank">http://www.derekyu.com/games/spelunky_0_96_1.exe</a><br><br><div class="quoteheader"><a href="http://forums.tigsource.com/index.php?topic=4017.msg123246#msg123246">Quote from: Alec on December 21, 2008, 07:50:12 AM</a></div><div class="quote">This game is awesome.&nbsp; <img src="index.php_files/toast.gif" alt="Beer!" border="0"><br></div><br>&nbsp;<img src="index.php_files/kiss.gif" alt="Kiss" border="0"></div>
+						</td>
+					</tr>
+					<tr>
+						<td class="smalltext" width="85%" valign="bottom">
+							<table style="table-layout: fixed;" width="100%" border="0"><tbody><tr>
+								<td colspan="2" class="smalltext" width="100%">
+								</td>
+							</tr><tr>
+								<td class="smalltext" id="modified_123248" valign="bottom">
+								</td>
+								<td class="smalltext" align="right" valign="bottom">
+									<img src="index.php_files/ip.gif" alt="" border="0">
+									Logged
+								</td>
+							</tr></tbody></table>
+						</td>
+					</tr>
+				</tbody></table>
+			</td></tr>
+		</tbody></table>
+	</td></tr>
+	<tr><td style="padding: 1px 1px 0pt;">
+		<a name="msg123252"></a>
+		<table width="100%" border="0" cellpadding="3" cellspacing="0">
+			<tbody><tr><td class="windowbg2">
+				<table style="table-layout: fixed;" width="100%" cellpadding="5" cellspacing="0">
+					<tbody><tr>
+						<td rowspan="2" style="overflow: hidden;" width="16%" valign="top">
+							<b><a href="http://forums.tigsource.com/index.php?action=profile;u=1140" title="View the profile of Valter">Valter</a></b>
+							<div class="smalltext">
+								Level 10<br>
+								<img src="index.php_files/starmod.gif" alt="*" border="0"><img src="index.php_files/starmod.gif" alt="*" border="0"><img src="index.php_files/starmod.gif" alt="*" border="0"><img src="index.php_files/starmod.gif" alt="*" border="0"><img src="index.php_files/starmod.gif" alt="*" border="0"><br><br>
+								<div style="overflow: auto; width: 100%;"><img src="index.php_files/savaaaaaaaaage.jpg" alt="" class="avatar" border="0"></div><br>
+								SAVAAAAAAAAGE<br>
+								<br>
+								
+								
+								
+								<br>
+								<a href="http://forums.tigsource.com/index.php?action=profile;u=1140"><img src="index.php_files/profile_sm.gif" alt="View Profile" title="View Profile" border="0"></a>
+							</div>
+						</td>
+						<td width="85%" height="100%" valign="top">
+							<table width="100%" border="0"><tbody><tr>
+								<td valign="middle"><a href="http://forums.tigsource.com/index.php?topic=4017.msg123252#msg123252"><img src="index.php_files/xx.gif" alt="" border="0"></a></td>
+								<td valign="middle">
+									<div style="font-weight: bold;" id="subject_123252">
+										<a href="http://forums.tigsource.com/index.php?topic=4017.msg123252#msg123252">Re: Spelunky!</a>
+									</div>
+									<div class="smalltext">« <b>Reply #7 on:</b> December 21, 2008, 08:08:34 AM »</div></td>
+								<td class="postbuttons" align="right">
+								</td>
+							</tr></tbody></table>
+							<hr class="hrcolor" width="100%" size="1">
+							<div class="post">Hello there, everybody. I'm GeneralValter, and I endorse this game.<br><br>Also, obligatory interjections about this game being really cool. <img src="index.php_files/kiss.gif" alt="Kiss" border="0"></div>
+						</td>
+					</tr>
+					<tr>
+						<td class="smalltext" width="85%" valign="bottom">
+							<table style="table-layout: fixed;" width="100%" border="0"><tbody><tr>
+								<td colspan="2" class="smalltext" width="100%">
+								</td>
+							</tr><tr>
+								<td class="smalltext" id="modified_123252" valign="bottom">
+								</td>
+								<td class="smalltext" align="right" valign="bottom">
+									<img src="index.php_files/ip.gif" alt="" border="0">
+									Logged
+								</td>
+							</tr></tbody></table>
+						</td>
+					</tr>
+				</tbody></table>
+			</td></tr>
+		</tbody></table>
+	</td></tr>
+	<tr><td style="padding: 1px 1px 0pt;">
+		<a name="msg123253"></a>
+		<table width="100%" border="0" cellpadding="3" cellspacing="0">
+			<tbody><tr><td class="windowbg">
+				<table style="table-layout: fixed;" width="100%" cellpadding="5" cellspacing="0">
+					<tbody><tr>
+						<td rowspan="2" style="overflow: hidden;" width="16%" valign="top">
+							<b><a href="http://forums.tigsource.com/index.php?action=profile;u=2358" title="View the profile of Miroslav Malesevic">Miroslav Malesevic</a></b>
+							<div class="smalltext">
+								Level 9<br>
+								<img src="index.php_files/starmod.gif" alt="*" border="0"><img src="index.php_files/starmod.gif" alt="*" border="0"><img src="index.php_files/starmod.gif" alt="*" border="0"><img src="index.php_files/starmod.gif" alt="*" border="0"><br><br>
+								<div style="overflow: auto; width: 100%;"><img src="index.php_files/2ldwnt0.png" alt="" class="avatar" border="0"></div><br>
+								
+								
+								
+								<br>
+								<a href="http://forums.tigsource.com/index.php?action=profile;u=2358"><img src="index.php_files/profile_sm.gif" alt="View Profile" title="View Profile" border="0"></a>
+								<a href="http://mirosurabu.com/" title="Mirosurabu Games" target="_blank"><img src="index.php_files/www_sm.gif" alt="WWW" border="0"></a>
+							</div>
+						</td>
+						<td width="85%" height="100%" valign="top">
+							<table width="100%" border="0"><tbody><tr>
+								<td valign="middle"><a href="http://forums.tigsource.com/index.php?topic=4017.msg123253#msg123253"><img src="index.php_files/xx.gif" alt="" border="0"></a></td>
+								<td valign="middle">
+									<div style="font-weight: bold;" id="subject_123253">
+										<a href="http://forums.tigsource.com/index.php?topic=4017.msg123253#msg123253">Re: Spelunky!</a>
+									</div>
+									<div class="smalltext">« <b>Reply #8 on:</b> December 21, 2008, 08:09:46 AM »</div></td>
+								<td class="postbuttons" align="right">
+								</td>
+							</tr></tbody></table>
+							<hr class="hrcolor" width="100%" size="1">
+							<div class="post">Have tried it but didn't have a time to give it a proper (read longer) try. I like how main menu is organized <img src="index.php_files/kiss.gif" alt="Kiss" border="0"> and I like the music (Cave Story rip-off? <img src="index.php_files/tongue.gif" alt="Tongue" border="0">). I feel there are some Indiana Jones influences too.<br><br>Regarding
+bad side, so far I got annoyed by one thing - when you die it doesn't
+tell you that you have to press X to go back to main menu (or maybe I
+didn't see the note).</div>
+						</td>
+					</tr>
+					<tr>
+						<td class="smalltext" width="85%" valign="bottom">
+							<table style="table-layout: fixed;" width="100%" border="0"><tbody><tr>
+								<td colspan="2" class="smalltext" width="100%">
+								</td>
+							</tr><tr>
+								<td class="smalltext" id="modified_123253" valign="bottom">
+								</td>
+								<td class="smalltext" align="right" valign="bottom">
+									<img src="index.php_files/ip.gif" alt="" border="0">
+									Logged
+								</td>
+							</tr></tbody></table>
+							<hr class="hrcolor" width="100%" size="1">
+							<div class="signature"><a href="http://mirosurabu.com/" target="_blank">mirosurabu.com</a> | <a href="http://twitter.com/mirosurabu" target="_blank">Twitter</a></div>
+						</td>
+					</tr>
+				</tbody></table>
+			</td></tr>
+		</tbody></table>
+	</td></tr>
+	<tr><td style="padding: 1px 1px 0pt;">
+		<a name="msg123256"></a>
+		<table width="100%" border="0" cellpadding="3" cellspacing="0">
+			<tbody><tr><td class="windowbg2">
+				<table style="table-layout: fixed;" width="100%" cellpadding="5" cellspacing="0">
+					<tbody><tr>
+						<td rowspan="2" style="overflow: hidden;" width="16%" valign="top">
+							<b><a href="http://forums.tigsource.com/index.php?action=profile;u=1772" title="View the profile of kYn">kYn</a></b>
+							<div class="smalltext">
+								Level 10<br>
+								<img src="index.php_files/starmod.gif" alt="*" border="0"><img src="index.php_files/starmod.gif" alt="*" border="0"><img src="index.php_files/starmod.gif" alt="*" border="0"><img src="index.php_files/starmod.gif" alt="*" border="0"><img src="index.php_files/starmod.gif" alt="*" border="0"><br><br>
+								<div style="overflow: auto; width: 100%;"><img src="index.php_files/index.gif" alt="" class="avatar" border="0"></div><br>
+								
+								
+								
+								<br>
+								<a href="http://forums.tigsource.com/index.php?action=profile;u=1772"><img src="index.php_files/profile_sm.gif" alt="View Profile" title="View Profile" border="0"></a>
+								<a href="http://kynquinhe.deviantart.com/" title="i really need a proper website" target="_blank"><img src="index.php_files/www_sm.gif" alt="WWW" border="0"></a>
+								<a href="mailto:jjmborges@gmail.com"><img src="index.php_files/email_sm.gif" alt="Email" title="Email" border="0"></a>
+							</div>
+						</td>
+						<td width="85%" height="100%" valign="top">
+							<table width="100%" border="0"><tbody><tr>
+								<td valign="middle"><a href="http://forums.tigsource.com/index.php?topic=4017.msg123256#msg123256"><img src="index.php_files/xx.gif" alt="" border="0"></a></td>
+								<td valign="middle">
+									<div style="font-weight: bold;" id="subject_123256">
+										<a href="http://forums.tigsource.com/index.php?topic=4017.msg123256#msg123256">Re: Spelunky!</a>
+									</div>
+									<div class="smalltext">« <b>Reply #9 on:</b> December 21, 2008, 08:14:17 AM »</div></td>
+								<td class="postbuttons" align="right">
+								</td>
+							</tr></tbody></table>
+							<hr class="hrcolor" width="100%" size="1">
+							<div class="post">This game is really great, and damn it's hard, I keep trying to kill the old man at the shops, but he always outsmarts me :D<br><br>I
+just have one complaint, I was playing the tutorial at first but then I
+tried to open a crate and it exploded(?), or maybe I confused the
+controls and dropped a bomb, not really sure what the hell happened.
+Anyway my point is, I died in the tutorial without learning all the
+little quirks, and I really wanted to get back there, but it seems the
+tutorial only shows once. I even tried deleting/start all over the
+again but the tutorial just won't show again.<br><br>Aside from that, really, the game is really nice, I got a feeling I'll keep playing this game everyday for a long time.</div>
+						</td>
+					</tr>
+					<tr>
+						<td class="smalltext" width="85%" valign="bottom">
+							<table style="table-layout: fixed;" width="100%" border="0"><tbody><tr>
+								<td colspan="2" class="smalltext" width="100%">
+								</td>
+							</tr><tr>
+								<td class="smalltext" id="modified_123256" valign="bottom">
+								</td>
+								<td class="smalltext" align="right" valign="bottom">
+									<img src="index.php_files/ip.gif" alt="" border="0">
+									Logged
+								</td>
+							</tr></tbody></table>
+						</td>
+					</tr>
+				</tbody></table>
+			</td></tr>
+		</tbody></table>
+	</td></tr>
+	<tr><td style="padding: 1px 1px 0pt;">
+		<a name="msg123287"></a>
+		<table width="100%" border="0" cellpadding="3" cellspacing="0">
+			<tbody><tr><td class="windowbg">
+				<table style="table-layout: fixed;" width="100%" cellpadding="5" cellspacing="0">
+					<tbody><tr>
+						<td rowspan="2" style="overflow: hidden;" width="16%" valign="top">
+							<b><a href="http://forums.tigsource.com/index.php?action=profile;u=1664" title="View the profile of Cheater&#8253;">Cheater&#8253;</a></b>
+							<div class="smalltext">
+								Level 10<br>
+								<img src="index.php_files/starmod.gif" alt="*" border="0"><img src="index.php_files/starmod.gif" alt="*" border="0"><img src="index.php_files/starmod.gif" alt="*" border="0"><img src="index.php_files/starmod.gif" alt="*" border="0"><img src="index.php_files/starmod.gif" alt="*" border="0"><br><br>
+								<div style="overflow: auto; width: 100%;"><img src="index.php_files/blasterseed3.png" alt="" class="avatar" border="0"></div><br>
+								
+								
+								
+								<br>
+								<a href="http://forums.tigsource.com/index.php?action=profile;u=1664"><img src="index.php_files/profile_sm.gif" alt="View Profile" title="View Profile" border="0"></a>
+								<a href="mailto:Cheater.01@gmail.com"><img src="index.php_files/email_sm.gif" alt="Email" title="Email" border="0"></a>
+							</div>
+						</td>
+						<td width="85%" height="100%" valign="top">
+							<table width="100%" border="0"><tbody><tr>
+								<td valign="middle"><a href="http://forums.tigsource.com/index.php?topic=4017.msg123287#msg123287"><img src="index.php_files/xx.gif" alt="" border="0"></a></td>
+								<td valign="middle">
+									<div style="font-weight: bold;" id="subject_123287">
+										<a href="http://forums.tigsource.com/index.php?topic=4017.msg123287#msg123287">Re: Spelunky!</a>
+									</div>
+									<div class="smalltext">« <b>Reply #10 on:</b> December 21, 2008, 09:42:12 AM »</div></td>
+								<td class="postbuttons" align="right">
+								</td>
+							</tr></tbody></table>
+							<hr class="hrcolor" width="100%" size="1">
+							<div class="post">Sadly,
+I can compare this game to Samurai Railroad Mansion and Assassin's
+Creed. I say sadly, because it's comparable it the categories "never
+starts" and "gives me a BSOD", respectively.</div>
+						</td>
+					</tr>
+					<tr>
+						<td class="smalltext" width="85%" valign="bottom">
+							<table style="table-layout: fixed;" width="100%" border="0"><tbody><tr>
+								<td colspan="2" class="smalltext" width="100%">
+								</td>
+							</tr><tr>
+								<td class="smalltext" id="modified_123287" valign="bottom">
+								</td>
+								<td class="smalltext" align="right" valign="bottom">
+									<img src="index.php_files/ip.gif" alt="" border="0">
+									Logged
+								</td>
+							</tr></tbody></table>
+						</td>
+					</tr>
+				</tbody></table>
+			</td></tr>
+		</tbody></table>
+	</td></tr>
+	<tr><td style="padding: 1px 1px 0pt;">
+		<a name="msg123300"></a>
+		<table width="100%" border="0" cellpadding="3" cellspacing="0">
+			<tbody><tr><td class="windowbg2">
+				<table style="table-layout: fixed;" width="100%" cellpadding="5" cellspacing="0">
+					<tbody><tr>
+						<td rowspan="2" style="overflow: hidden;" width="16%" valign="top">
+							<b><a href="http://forums.tigsource.com/index.php?action=profile;u=417" title="View the profile of Melly">Melly</a></b>
+							<div class="smalltext">
+								Global Moderator<br>
+								Level 10<br>
+								<img src="index.php_files/stargmod.gif" alt="*" border="0"><img src="index.php_files/stargmod.gif" alt="*" border="0"><img src="index.php_files/stargmod.gif" alt="*" border="0"><img src="index.php_files/stargmod.gif" alt="*" border="0"><img src="index.php_files/stargmod.gif" alt="*" border="0"><img src="index.php_files/stargmod.gif" alt="*" border="0"><br><br>
+								<div style="overflow: auto; width: 100%;"><img src="index.php_files/1zpqsd4.gif" alt="" class="avatar" border="0"></div><br>
+								There are cakes in the sky, can't you see them?<br>
+								<br>
+								
+								
+								
+								<br>
+								<a href="http://forums.tigsource.com/index.php?action=profile;u=417"><img src="index.php_files/profile_sm.gif" alt="View Profile" title="View Profile" border="0"></a>
+							</div>
+						</td>
+						<td width="85%" height="100%" valign="top">
+							<table width="100%" border="0"><tbody><tr>
+								<td valign="middle"><a href="http://forums.tigsource.com/index.php?topic=4017.msg123300#msg123300"><img src="index.php_files/xx.gif" alt="" border="0"></a></td>
+								<td valign="middle">
+									<div style="font-weight: bold;" id="subject_123300">
+										<a href="http://forums.tigsource.com/index.php?topic=4017.msg123300#msg123300">Re: Spelunky!</a>
+									</div>
+									<div class="smalltext">« <b>Reply #11 on:</b> December 21, 2008, 10:05:22 AM »</div></td>
+								<td class="postbuttons" align="right">
+								</td>
+							</tr></tbody></table>
+							<hr class="hrcolor" width="100%" size="1">
+							<div class="post">Cheater, is seems like some kind of issue with Game Maker games. Besides AC, that is.<br><br>Also Derek, bug. If you break a pot by shooting it with a shotgun too close you'll die, which doesn't make sense.</div>
+						</td>
+					</tr>
+					<tr>
+						<td class="smalltext" width="85%" valign="bottom">
+							<table style="table-layout: fixed;" width="100%" border="0"><tbody><tr>
+								<td colspan="2" class="smalltext" width="100%">
+								</td>
+							</tr><tr>
+								<td class="smalltext" id="modified_123300" valign="bottom">
+								</td>
+								<td class="smalltext" align="right" valign="bottom">
+									<img src="index.php_files/ip.gif" alt="" border="0">
+									Logged
+								</td>
+							</tr></tbody></table>
+							<hr class="hrcolor" width="100%" size="1">
+							<div class="signature">Feel free to disregard the above.<br>Games: <a href="http://tinyurl.com/MinusGame" target="_blank">Minus</a> / <a href="http://tinyurl.com/TimeWarpTickers" target="_blank">Time Warp Tickers (WIP)</a><br><a href="http://tinyurl.com/ComicompoRJ" target="_blank"><img src="index.php_files/2v9rwmt.png" alt="" border="0"></a></div>
+						</td>
+					</tr>
+				</tbody></table>
+			</td></tr>
+		</tbody></table>
+	</td></tr>
+	<tr><td style="padding: 1px 1px 0pt;">
+		<a name="msg123302"></a>
+		<table width="100%" border="0" cellpadding="3" cellspacing="0">
+			<tbody><tr><td class="windowbg">
+				<table style="table-layout: fixed;" width="100%" cellpadding="5" cellspacing="0">
+					<tbody><tr>
+						<td rowspan="2" style="overflow: hidden;" width="16%" valign="top">
+							<b><a href="http://forums.tigsource.com/index.php?action=profile;u=1664" title="View the profile of Cheater&#8253;">Cheater&#8253;</a></b>
+							<div class="smalltext">
+								Level 10<br>
+								<img src="index.php_files/starmod.gif" alt="*" border="0"><img src="index.php_files/starmod.gif" alt="*" border="0"><img src="index.php_files/starmod.gif" alt="*" border="0"><img src="index.php_files/starmod.gif" alt="*" border="0"><img src="index.php_files/starmod.gif" alt="*" border="0"><br><br>
+								<div style="overflow: auto; width: 100%;"><img src="index.php_files/blasterseed3.png" alt="" class="avatar" border="0"></div><br>
+								
+								
+								
+								<br>
+								<a href="http://forums.tigsource.com/index.php?action=profile;u=1664"><img src="index.php_files/profile_sm.gif" alt="View Profile" title="View Profile" border="0"></a>
+								<a href="mailto:Cheater.01@gmail.com"><img src="index.php_files/email_sm.gif" alt="Email" title="Email" border="0"></a>
+							</div>
+						</td>
+						<td width="85%" height="100%" valign="top">
+							<table width="100%" border="0"><tbody><tr>
+								<td valign="middle"><a href="http://forums.tigsource.com/index.php?topic=4017.msg123302#msg123302"><img src="index.php_files/xx.gif" alt="" border="0"></a></td>
+								<td valign="middle">
+									<div style="font-weight: bold;" id="subject_123302">
+										<a href="http://forums.tigsource.com/index.php?topic=4017.msg123302#msg123302">Re: Spelunky!</a>
+									</div>
+									<div class="smalltext">« <b>Reply #12 on:</b> December 21, 2008, 10:14:54 AM »</div></td>
+								<td class="postbuttons" align="right">
+								</td>
+							</tr></tbody></table>
+							<hr class="hrcolor" width="100%" size="1">
+							<div class="post"><div class="quoteheader"><a href="http://forums.tigsource.com/index.php?topic=4017.msg123300#msg123300">Quote from: Melly on December 21, 2008, 10:05:22 AM</a></div><div class="quote">Cheater, is seems like some kind of issue with Game Maker games. Besides AC, that is.<br></div>Actually, I have run plenty of GM games with only some keyboard issues. <br><br>Anyways,
+the game works if it's not fullscreen'd, I have played it only a
+little, but I have already managed to kill myself by throwing a rock at
+a&nbsp; wall. It bounced. Awesome.</div>
+						</td>
+					</tr>
+					<tr>
+						<td class="smalltext" width="85%" valign="bottom">
+							<table style="table-layout: fixed;" width="100%" border="0"><tbody><tr>
+								<td colspan="2" class="smalltext" width="100%">
+								</td>
+							</tr><tr>
+								<td class="smalltext" id="modified_123302" valign="bottom">
+								</td>
+								<td class="smalltext" align="right" valign="bottom">
+									<img src="index.php_files/ip.gif" alt="" border="0">
+									Logged
+								</td>
+							</tr></tbody></table>
+						</td>
+					</tr>
+				</tbody></table>
+			</td></tr>
+		</tbody></table>
+	</td></tr>
+	<tr><td style="padding: 1px 1px 0pt;">
+		<a name="msg123305"></a>
+		<table width="100%" border="0" cellpadding="3" cellspacing="0">
+			<tbody><tr><td class="windowbg2">
+				<table style="table-layout: fixed;" width="100%" cellpadding="5" cellspacing="0">
+					<tbody><tr>
+						<td rowspan="2" style="overflow: hidden;" width="16%" valign="top">
+							<b><a href="http://forums.tigsource.com/index.php?action=profile;u=391" title="View the profile of jwaap">jwaap</a></b>
+							<div class="smalltext">
+								Level 6<br>
+								<img src="index.php_files/starmod.gif" alt="*" border="0"><br><br>
+								<div style="overflow: auto; width: 100%;"><img src="index.php_files/mandance2.gif" alt="" class="avatar" border="0"></div><br>
+								sup<br>
+								<br>
+								
+								<a href="http://members.msn.com/jwaap@hotmail.com" target="_blank"><img src="index.php_files/msntalk.gif" alt="jwaap@hotmail.com" border="0"></a>
+								
+								<br>
+								<a href="http://forums.tigsource.com/index.php?action=profile;u=391"><img src="index.php_files/profile_sm.gif" alt="View Profile" title="View Profile" border="0"></a>
+								<a href="http://www.slordig.com/" title="slordig dot com" target="_blank"><img src="index.php_files/www_sm.gif" alt="WWW" border="0"></a>
+								<a href="mailto:jwnijman@gmail.com"><img src="index.php_files/email_sm.gif" alt="Email" title="Email" border="0"></a>
+							</div>
+						</td>
+						<td width="85%" height="100%" valign="top">
+							<table width="100%" border="0"><tbody><tr>
+								<td valign="middle"><a href="http://forums.tigsource.com/index.php?topic=4017.msg123305#msg123305"><img src="index.php_files/xx.gif" alt="" border="0"></a></td>
+								<td valign="middle">
+									<div style="font-weight: bold;" id="subject_123305">
+										<a href="http://forums.tigsource.com/index.php?topic=4017.msg123305#msg123305">Re: Spelunky!</a>
+									</div>
+									<div class="smalltext">« <b>Reply #13 on:</b> December 21, 2008, 10:16:45 AM »</div></td>
+								<td class="postbuttons" align="right">
+								</td>
+							</tr></tbody></table>
+							<hr class="hrcolor" width="100%" size="1">
+							<div class="post"><div class="quoteheader"><a href="http://forums.tigsource.com/index.php?topic=4017.msg123233#msg123233">Quote from: Mr. Yes on December 21, 2008, 07:25:11 AM</a></div><div class="quote">Very neat, just started playing!<br><br>Unfortunately,
+I got an error after pressing C, while carrying the gray block and
+having thrown the "rope" or whatever two times.<br>___________________________________________<br>ERROR in<br>action number 10<br>of&nbsp; Step Event<br>for object oPlayer1:<br><br>Error in code at line 23:<br>&nbsp; &nbsp; &nbsp; &nbsp;if (holdItem.type == "Bow")<br><br>at position 19: Unknown variable type<br><br>I actually got this error three times, it was very easy to replicate.<br></div><br>doesnt == make gm want a non string answer <img src="index.php_files/wink.gif" alt="Wink" border="0"> try =</div>
+						</td>
+					</tr>
+					<tr>
+						<td class="smalltext" width="85%" valign="bottom">
+							<table style="table-layout: fixed;" width="100%" border="0"><tbody><tr>
+								<td colspan="2" class="smalltext" width="100%">
+								</td>
+							</tr><tr>
+								<td class="smalltext" id="modified_123305" valign="bottom">
+								</td>
+								<td class="smalltext" align="right" valign="bottom">
+									<img src="index.php_files/ip.gif" alt="" border="0">
+									Logged
+								</td>
+							</tr></tbody></table>
+							<hr class="hrcolor" width="100%" size="1">
+							<div class="signature"><a href="http://forums.tigsource.com/index.php?topic=9011.0" target="_blank">all my games so far in one topic</a></div>
+						</td>
+					</tr>
+				</tbody></table>
+			</td></tr>
+		</tbody></table>
+	</td></tr>
+	<tr><td style="padding: 1px 1px 0pt;">
+		<a name="msg123321"></a>
+		<table width="100%" border="0" cellpadding="3" cellspacing="0">
+			<tbody><tr><td class="windowbg">
+				<table style="table-layout: fixed;" width="100%" cellpadding="5" cellspacing="0">
+					<tbody><tr>
+						<td rowspan="2" style="overflow: hidden;" width="16%" valign="top">
+							<b><a href="http://forums.tigsource.com/index.php?action=profile;u=13" title="View the profile of Caio">Caio</a></b>
+							<div class="smalltext">
+								Level 10<br>
+								<img src="index.php_files/starmod.gif" alt="*" border="0"><img src="index.php_files/starmod.gif" alt="*" border="0"><img src="index.php_files/starmod.gif" alt="*" border="0"><img src="index.php_files/starmod.gif" alt="*" border="0"><img src="index.php_files/starmod.gif" alt="*" border="0"><br><br>
+								<div style="overflow: auto; width: 100%;"><img src="index.php_files/LmxfU.png" alt="" class="avatar" border="0"></div><br>
+								KAH-yoo<br>
+								<br>
+								
+								<a href="http://members.msn.com/caio.lpm@hotmail.com" target="_blank"><img src="index.php_files/msntalk.gif" alt="caio.lpm@hotmail.com" border="0"></a>
+								
+								<br>
+								<a href="http://forums.tigsource.com/index.php?action=profile;u=13"><img src="index.php_files/profile_sm.gif" alt="View Profile" title="View Profile" border="0"></a>
+							</div>
+						</td>
+						<td width="85%" height="100%" valign="top">
+							<table width="100%" border="0"><tbody><tr>
+								<td valign="middle"><a href="http://forums.tigsource.com/index.php?topic=4017.msg123321#msg123321"><img src="index.php_files/xx.gif" alt="" border="0"></a></td>
+								<td valign="middle">
+									<div style="font-weight: bold;" id="subject_123321">
+										<a href="http://forums.tigsource.com/index.php?topic=4017.msg123321#msg123321">Re: Spelunky!</a>
+									</div>
+									<div class="smalltext">« <b>Reply #14 on:</b> December 21, 2008, 10:42:30 AM »</div></td>
+								<td class="postbuttons" align="right">
+								</td>
+							</tr></tbody></table>
+							<hr class="hrcolor" width="100%" size="1">
+							<div class="post">Why isn't this on TIGdb? <img src="index.php_files/wink.gif" alt="Wink" border="0"></div>
+						</td>
+					</tr>
+					<tr>
+						<td class="smalltext" width="85%" valign="bottom">
+							<table style="table-layout: fixed;" width="100%" border="0"><tbody><tr>
+								<td colspan="2" class="smalltext" width="100%">
+								</td>
+							</tr><tr>
+								<td class="smalltext" id="modified_123321" valign="bottom">
+								</td>
+								<td class="smalltext" align="right" valign="bottom">
+									<img src="index.php_files/ip.gif" alt="" border="0">
+									Logged
+								</td>
+							</tr></tbody></table>
+						</td>
+					</tr>
+				</tbody></table>
+			</td></tr>
+		</tbody></table>
+	</td></tr>
+	<tr><td style="padding: 0pt 0pt 1px;"></td></tr>
+</tbody></table>
+<a name="lastPost"></a>
+<table class="tborder" style="margin-top: 5px;" width="100%" border="0" cellpadding="0" cellspacing="0">
+	<tbody><tr class="catbg">
+		<td class="middletext">Pages: [<b>1</b>] <a class="navPages" href="http://forums.tigsource.com/index.php?topic=4017.15">2</a> <a class="navPages" href="http://forums.tigsource.com/index.php?topic=4017.30">3</a> <b> ... </b><a class="navPages" href="http://forums.tigsource.com/index.php?topic=4017.4500">301</a> </td>
+		<td class="postbuttons" align="right">
+			<table cellpadding="0" cellspacing="0">
+				<tbody><tr>
+					<td><a href="http://forums.tigsource.com/index.php?action=printpage;topic=4017.0" target="_blank"><img src="index.php_files/print.gif" alt="Print" border="0"></a></td>
+				</tr>
+			</tbody></table>
+		</td>
+	</tr>
+</tbody></table>
+<script language="JavaScript" type="text/javascript" src="index.php_files/xml_topic.js"></script>
+<script language="JavaScript" type="text/javascript"><!-- // --><![CDATA[
+	quickReplyCollapsed = true;
+
+	smf_topic = 4017;
+	smf_start = 0;
+	smf_show_modify = 1;
+
+	// On quick modify, this is what the body will look like.
+	var smf_template_body_edit = '<div id="error_box" style="padding: 4px; color: red;"></div><textarea class="editor" name="message" rows="12" style="width: 94%; margin-bottom: 10px;">%body%</textarea><br /><input type="hidden" name="sc" value="10514f1ad8d54c517a29c353c2a0f004" /><input type="hidden" name="topic" value="4017" /><input type="hidden" name="msg" value="%msg_id%" /><div style="text-align: center;"><input type="submit" name="post" value="Save" onclick="return modify_save(\'10514f1ad8d54c517a29c353c2a0f004\');" accesskey="s" />&nbsp;&nbsp;<input type="submit" name="cancel" value="Cancel" onclick="return modify_cancel();" /></div>';
+
+	// And this is the replacement for the subject.
+	var smf_template_subject_edit = '<input type="text" name="subject" value="%subject%" size="60" style="width: 99%;"  maxlength="80" />';
+
+	// Restore the message to this after editing.
+	var smf_template_body_normal = '%body%';
+	var smf_template_subject_normal = '<a href="http://forums.tigsource.com/index.php?topic=4017.msg%msg_id%#msg%msg_id%">%subject%</a>';
+	var smf_template_top_subject = "Topic: %subject% &nbsp;(Read 656008 times)"
+
+	if (window.XMLHttpRequest)
+		showModifyButtons();
+// ]]></script>
+<table style="margin-bottom: 1ex;" width="100%" border="0" cellpadding="0" cellspacing="0">
+		<tbody><tr>
+				<td class="nav" align="right" valign="top"> <a href="http://forums.tigsource.com/index.php?topic=4017.0;prev_next=prev#new">« previous</a> <a href="http://forums.tigsource.com/index.php?topic=4017.0;prev_next=next#new">next »</a></td>
+		</tr>
+</tbody></table>
+	<table border="0" cellpadding="0" cellspacing="0">
+		<tbody><tr>
+			<td class="postbuttons"></td>
+		</tr>
+	</tbody></table>
+</form>
+<div class="tborder"><div class="titlebg2" style="padding: 4px;" align="right">
+	<form action="http://forums.tigsource.com/index.php" method="get" accept-charset="ISO-8859-1" style="margin: 0pt; padding: 0pt;">
+		<span class="smalltext">Jump to:</span>
+		<select name="jumpto" id="jumpto" onchange="if (this.selectedIndex > 0 &amp;&amp; this.options[this.selectedIndex].value) window.location.href = smf_scripturl + this.options[this.selectedIndex].value.substr(smf_scripturl.indexOf('?') == -1 || this.options[this.selectedIndex].value.substr(0, 1) != '?' ? 0 : 1);">
+			<option value="">Please select a destination:</option>
+			<option value="" disabled="disabled">-----------------------------</option>
+			<option value="#6">Get Togethers!</option>
+			<option value="" disabled="disabled">-----------------------------</option>
+			<option value="?board=13.0"> =&gt; GDC 2010</option>
+			<option value="?board=15.0"> =&gt; TIGJams</option>
+			<option value="" disabled="disabled">-----------------------------</option>
+			<option value="#4">Community</option>
+			<option value="" disabled="disabled">-----------------------------</option>
+			<option value="?board=6.0" selected="selected"> =&gt; Feedback</option>
+			<option value="?board=9.0"> =&gt; Competitions</option>
+			<option value="?board=38.0"> ===&gt; Assemblee: Part 2</option>
+			<option value="?board=37.0"> ===&gt; Assemblee: Part 1</option>
+			<option value="?board=36.0"> ===&gt; Adult/Educational Compo</option>
+			<option value="?board=32.0"> ===&gt; GAMMA</option>
+			<option value="?board=34.0"> ===&gt; Old Competitions</option>
+			<option value="?board=19.0"> =====&gt; B-Games</option>
+			<option value="?board=31.0"> =====&gt; Text the Halls</option>
+			<option value="?board=20.0"> =====&gt; VGNG</option>
+			<option value="?board=21.0"> =====&gt; Procedural Generation</option>
+			<option value="?board=22.0"> =====&gt; Bootleg Demakes</option>
+			<option value="?board=23.0"> =====&gt; Commonplace Book</option>
+			<option value="?board=33.0"> =====&gt; Cockpit Competition</option>
+			<option value="?board=8.0"> =&gt; Projects</option>
+			<option value="?board=28.0"> ===&gt; Balding's Quest</option>
+			<option value="?board=29.0"> ===&gt; Indie Brawl</option>
+			<option value="?board=39.0"> ===&gt; TIGCast</option>
+			<option value="?board=30.0"> ===&gt; Archived Projects</option>
+			<option value="?board=17.0"> =&gt; Announcements</option>
+			<option value="" disabled="disabled">-----------------------------</option>
+			<option value="#2">Developer</option>
+			<option value="" disabled="disabled">-----------------------------</option>
+			<option value="?board=5.0"> =&gt; Creative</option>
+			<option value="?board=24.0"> ===&gt; Art</option>
+			<option value="?board=25.0"> ===&gt; Design</option>
+			<option value="?board=26.0"> ===&gt; Audio</option>
+			<option value="?board=27.0"> ===&gt; DevLogs</option>
+			<option value="?board=4.0"> =&gt; Technical</option>
+			<option value="?board=16.0"> =&gt; Tutorials</option>
+			<option value="?board=3.0"> =&gt; Business</option>
+			<option value="?board=40.0"> =&gt; Jobs</option>
+			<option value="?board=41.0"> ===&gt; Unpaid Collaborations</option>
+			<option value="" disabled="disabled">-----------------------------</option>
+			<option value="#1">Player</option>
+			<option value="" disabled="disabled">-----------------------------</option>
+			<option value="?board=1.0"> =&gt; General</option>
+			<option value="?board=2.0"> =&gt; Indie Games</option>
+		</select>&nbsp;
+		<input value="go" onclick="if (this.form.jumpto.options[this.form.jumpto.selectedIndex].value) window.location.href = 'http://forums.tigsource.com/index.php' + this.form.jumpto.options[this.form.jumpto.selectedIndex].value;" type="button">
+	</form>
+</div></div><br>
+			
+		</div>
+   </div>
+	</div>
+</div>
+<div id="wrapper">
+	<div id="footer-l">
+		<div id="footer-r">
+			<div id="footer">
+
+		<span class="smalltext" style="display: inline; visibility: visible; font-family: Verdana,Arial,sans-serif;"><a href="http://www.simplemachines.org/" title="Simple Machines Forum" target="_blank">Powered by SMF 1.1.10</a> | 
+<a href="http://www.simplemachines.org/about/copyright.php" title="Free Forum Software" target="_blank">SMF © 2006-2009, Simple Machines LLC</a>
+		</span>
+			</div>
+		</div>
+	</div>
+	<div id="footer2">
+   	Theme orange-lt created by <a href="http://padexx.de/">panic</a>
+	</div>
+			<!-- Start Quantcast tag -->
+      <script type="text/javascript">
+      _qoptions={
+      qacct:"p-8bTdbYIATHgAs"
+      };
+      </script>
+      <script type="text/javascript" src="index.php_files/quant.js"></script>
+      <noscript>
+<img src="http://pixel.quantserve.com/pixel/p-8bTdbYIATHgAs.gif"
+style="display: none;" border="0" height="1" width="1"
+alt="Quantcast"/> </noscript>
+      <!-- End Quantcast tag -->
+      <script type="text/javascript">
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src=\"" + gaJsHost + "google-analytics.com/ga.js\" type=\"text/javascript\"%3E%3C/script%3E"));
+      </script><script src="index.php_files/ga.js" type="text/javascript"></script>
+      <script type="text/javascript">
+      try {
+      var pageTracker = _gat._getTracker("UA-101694-10");
+      pageTracker._trackPageview();
+      } catch(err) {}</script>
+</div>
+	<div id="ajax_in_progress" style="display: none;">Loading...</div>
+</body></html>

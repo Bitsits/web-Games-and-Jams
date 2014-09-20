@@ -1,0 +1,145 @@
+html {
+  height: 100%;
+  margin-bottom: 0px;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	text-align: center; 
+	vertical-align: middle; 
+}
+
+#page_bg {
+	height: 100%; 
+	padding: 0;
+	background: #55c1f9 url(http://crayonphysicsdeluxe.s3.amazonaws.com/crayonphysics.com/images/background.jpg) repeat-x top;
+}
+
+#wrapper {
+	margin: 0 auto;
+	position: relative;
+	width: 812px;	
+	text-align: left; 
+}
+
+#header {
+	position: relative;
+	background: url(http://crayonphysicsdeluxe.s3.amazonaws.com/crayonphysics.com/images/header.jpg) no-repeat;
+	height: 178px;
+}
+
+#content {
+	position: relative;
+	background: url(http://crayonphysicsdeluxe.s3.amazonaws.com/crayonphysics.com/images/paper_texture.jpg) repeat-y;
+	/*height:640px;*/
+	padding-left:65px;
+	padding-right:65px;
+}
+
+#footer {
+	position: relative;
+	background: url(http://crayonphysicsdeluxe.s3.amazonaws.com/crayonphysics.com/images/footer.jpg) no-repeat;
+	height: 105px;
+}
+
+#preorder {
+	background: url(http://crayonphysicsdeluxe.s3.amazonaws.com/crayonphysics.com/images/preorder_now.jpg) no-repeat;
+	height:241px;
+	width:244px;
+	padding-top:6px;
+	padding-left:21px;
+	padding-right:26px;
+	
+}
+
+#preorder_wrapper_because_css_and_browers_suck
+{
+	width:200px;
+	font-family: Verdana,Arial, Sans-Serif;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 110%;
+	text-align: left;
+}
+
+#bigtextbox { 
+	
+	background:url(http://crayonphysicsdeluxe.s3.amazonaws.com/crayonphysics.com/images/textbox_big.jpg) no-repeat; 
+	width:664px; 
+	height:281px;
+	margin-top:12px;
+	margin-left:5px;
+	padding-left:36px;
+	padding-top:30px;
+	padding-right:30px;
+	padding-bottom:35px;
+	margin-bottom:-35px;
+}	
+
+
+#bigtextbox_warpper_because_padding_right_doesnt_work
+{
+	width:600px;
+	font-family: Verdana,Arial, Sans-Serif;
+	font-weight: normal;
+	font-size: 13px;
+	line-height: 140%;
+	text-align: left;
+}
+
+#bigtextbox_list
+{
+	margin-top:-2px;
+	margin-left: 0;
+	padding-left: 0;
+	list-style: none;
+	
+	font-family: Verdana,Arial, Sans-Serif;
+	font-weight: normal;
+	font-size: 13px;
+	line-height: 140%;
+	text-align: left;
+}
+
+#bigtextbox_list li
+{
+	padding-left: 10px;
+	background-image: url(http://crayonphysicsdeluxe.s3.amazonaws.com/crayonphysics.com/images/bullet.gif);
+	background-repeat: no-repeat;
+	background-position: 0 .5em;
+}
+#bigtextbox_list li span
+{
+	padding-left:5px;
+}
+
+#mailinglist
+{
+	padding-left:92px;
+	
+}
+#mailinglist_form .textfield {
+	padding:5px;
+	height:26px;
+	width:148px;
+	border:solid 0 #fff;
+	background-image: url('http://crayonphysicsdeluxe.s3.amazonaws.com/crayonphysics.com/images/mailinglist_back.png');
+	background-repeat:no-repeat;
+	color:black;
+	font-family:arial narrow;
+	font-weight:bold;
+	font-size:9pt;
+	margin:0px;
+}
+
+
+.logo { 
+	/*border-top:36px;*/
+}
+
+#igf_prize {
+	position:absolute;
+	left:405px;
+	top:-300px;
+}

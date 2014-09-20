@@ -1,0 +1,20 @@
+.bold {font-weight: bold;}
+.bigger {font-size: 1.7em}
+.big {font-size: 1.5em;}
+
+.right {text-align: right;} 
+.center {text-align: center;}
+.justify {text-align: justify}
+
+.align_left {float: left; padding: 10px;}
+.align_right {float: right; padding: 10px;}
+
+.block { display:block; }
+
+.out_link {padding: 0px 20px 0px 0px; background:url(/images/out.gif) right center no-repeat;}
+
+.failure, .error { background: #f7eaea; padding: 8px; font-family: Arial, Helvetica, sans-serif; font-size: 1.3em; color: #d30e0e; border: 1px solid #d30e0e; display: block;}
+
+.information, .info { background: #f9f2d7; padding: 8px; font-family: Arial, Helvetica, sans-serif; font-size: 1.3em; color: #d08707; border: 1px solid #d08707; display: block;}
+
+.success { background: #f0f9d7; padding: 8px; font-family: Arial, Helvetica, sans-serif; font-size: 1.3em; color: #63a004; border: 1px solid #63a004; display: block;}

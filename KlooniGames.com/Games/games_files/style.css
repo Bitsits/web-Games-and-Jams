@@ -1,0 +1,552 @@
+
+#the_games { display:block; }
+#the_games a img { margin: 0 0 8px 4px; background:url("http://www.kloonigames.com/blog/wp-content/themes/klooniv2/images/games_back_norm.gif");  padding-left:10px; padding-top:9px; padding-right:15px; padding-bottom:16px; width:65px; height:65px; }
+#the_games a:hover img { padding-left:15px; padding-top:14px; padding-right:10px; padding-bottom:11px; background:url("http://www.kloonigames.com/blog/wp-content/themes/klooniv2/images/games_back_high.gif"); }
+
+body 
+{
+	font-size: 62.5%; /* Resets 1em to 10px */
+	font-family: 'Lucida Grande', Verdana, Arial, Sans-Serif;
+	color: #333;
+	text-align: center;
+	margin:0;
+	padding:0;
+    background: #ffffff url("http://www.kloonigames.com/blog/wp-content/themes/klooniv2/images/background_fade.gif") repeat-x top; 
+}
+
+#page 
+{
+    /*position:relative;
+	top:205px;*/
+	border: none; 
+	margin:0px auto; 
+	padding:0;
+	padding-top:205px;
+	text-align: center;
+	width:890px;	
+	/*background: url("http://www.kloonigames.com/blog/wp-content/themes/klooniv2/images/background_grey.gif") repeat-y 0px 500px;*/
+	/*background-position: 0px 500px;*/
+    /*background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-attachment: fixed;
+	*/
+}
+
+/* <Header> */	
+	
+#header 
+{
+    z-index:0;
+	position:absolute; 
+	top:0px; 
+	left:0px;
+	/* Horrible hack to get this thing working in IE */
+	width:100%; 
+	/*width:expressi\on(document.body.clientWidth); */
+	height:175px;
+	background: #0F85C7 url('http://www.kloonigames.com/blog/wp-content/themes/klooniv2/images/header_backgroundleft.jpg') repeat-x; background-position: top center;
+}
+
+#headerimg 	
+{ 
+	margin: 0px 0px 0; 
+	height: 175px; 
+	width: 100%;
+	background: url('http://www.kloonigames.com/blog/wp-content/themes/klooniv2/images/header_background_center.jpg') no-repeat; background-position: top center; 
+} 
+
+#headerimg .description 
+{
+	font-size: 1.2em;
+	text-align: center;
+}
+
+#headerimg .next_game 
+{
+    position:absolute;
+	top:155px;
+	left:0px;
+	width:100%;
+	height:15px;
+    color: #ffffff;
+	font-size: 1.2em;
+	text-align:center;
+	font-style:italic;
+}
+
+#header h1
+{
+    font-family: Georgia;
+	font-weight: bold;
+	letter-spacing:1.0;
+  	text-align: center;
+	font-size: 4em;
+	color: white;
+	padding-top: 45px;
+	margin: 0;
+}
+
+#header h1, h1 a, h1 a:hover, h1 a:visited, #headerimg .description 
+{
+	text-decoration: none;
+	color: white;
+}
+
+/* </Header> */
+
+
+/* <Content> */
+#content 
+{
+	font-size: 1.2em;
+	width:550px;
+	text-align:left;
+	padding-left:20px;
+	/*padding-right:20px;*/
+	/*padding:0;*/
+	float:left;
+	/*align:left;*/
+}
+
+hr 
+{
+	display: none;
+}
+
+.post 
+{
+	margin: 0 0 40px;
+	text-align: justify;
+}
+	
+.widecolumn .entry p 
+{
+	font-size: 1.05em;
+}
+
+.narrowcolumn .entry, .widecolumn .entry 
+{
+	line-height: 1.4em;
+}
+
+.widecolumn 
+{
+	line-height: 1.6em;
+}
+
+.narrowcolumn .postmetadata 
+{
+	text-align: center;
+}
+
+
+h1, h2 
+{
+	font-family: Georgia, 'Trebuchet MS', 'Lucida Grande', Verdana, Arial, Sans-Serif;
+	font-weight: bold;
+	margin:0; 
+	padding:0; 
+	border:0;
+
+}
+
+h3
+{
+	font-family: 'Trebuchet MS', 'Lucida Grande', Verdana, Arial, Sans-Serif;
+	font-weight: bold;
+	margin:0; 
+	padding:0; 
+	border:0;
+
+}
+
+.alt 
+{
+	background-color: #f8f8f8;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+}
+
+/* <Sidebar> */
+
+
+#sidebar 
+{
+	font: 1em 'Lucida Grande', Verdana, Arial, Sans-Serif;
+}
+
+small, #sidebar ul ul li, #sidebar ul ol li, .nocomments, .postmetadata, blockquote, strike 
+{
+ 	padding:0px 10px;
+	color: #777;
+}
+	
+#sidebar h2 
+{
+	margin: 5px 0 0;
+	padding: 0;
+}
+
+
+#sidebar ul, #sidebar ul ol 
+{
+	margin: 0;
+	padding: 0;
+}
+
+#sidebar ul li 
+{
+	list-style-type: none;
+	list-style-image: none;
+	margin-bottom: 15px;
+}
+
+#sidebar ul p, #sidebar ul select 
+{
+	margin: 5px 0 8px;
+}
+
+#sidebar ul ul, #sidebar ul ol 
+{
+	margin: 5px 0 0 10px;
+}
+
+#sidebar ul ul ul, #sidebar ul ol 
+{
+	margin: 0 0 0 10px;
+}
+
+ol li, #sidebar ul ol li 
+{
+	list-style: decimal outside;
+}
+
+#sidebar ul ul li, #sidebar ul ol li 
+{
+	margin: 3px 0 0;
+	padding: 0;
+}
+	
+#sidebar
+{
+	padding: 0;
+	/*margin: 0;*/
+	margin-top:-7px;
+	padding-top:5px;
+	padding-bottom:0px;
+	margin-left: 630px;
+	/*mar\gin-left:0px;*/
+	width: 200px;
+	padding-left:20px;
+	padding-right:20px;
+	background:#fafafa url('http://www.kloonigames.com/blog/wp-content/themes/klooniv2/images/background_bogroll_fade.png') repeat-x; background-position: bottom center;
+	text-align:left;
+	display:block;
+}
+
+#sidebar form 
+{
+	margin: 0;
+}
+
+.entry ul li:before, 
+{
+	margin-left: 0px;
+	padding: 0 0 0 30px;
+	list-style: disc inside;
+	padding-left: 10px;
+	text-indent: -10px;
+
+}
+
+.entry ul li
+{
+padding-bottom:15px;
+}
+
+#sidebar ul ul li:before 
+{
+	content: "\00BB \0020";
+}
+
+/* End o sidebar */
+
+/* Font thing */
+small 
+{
+	font-family: Arial, Helvetica, Sans-Serif;
+	font-size: 0.9em;
+	line-height: 1.5em;
+}
+
+
+h2 {
+	font-size: 1.6em;
+	}
+
+h2.pagetitle {
+	font-size: 1.6em;
+	}
+
+#sidebar h2 {
+	font-family: 'Lucida Grande', Verdana, Sans-Serif;
+	font-size: 1.2em;
+	}
+
+h3 {
+	font-size: 1.3em;
+	}
+	
+	
+.entry p a:visited {
+	color: #b85b5a;
+	}
+
+code {
+	font: 1.1em 'Courier New', Courier, Fixed;
+	}
+
+acronym, abbr, span.caps
+{
+	font-size: 0.9em;
+	letter-spacing: .07em;
+	}
+
+a, h2 a:hover, h3 a:hover {
+	color: #06c;
+	text-decoration: none;
+	}
+
+a:hover {
+	color: #147;
+	text-decoration: underline;
+	}
+
+#wp-calendar #prev a {
+	font-size: 9pt;
+	}
+
+#wp-calendar a {
+	text-decoration: none;
+	}
+
+#wp-calendar caption {
+	font: bold 1.3em 'Lucida Grande', Verdana, Arial, Sans-Serif;
+	text-align: center;
+	}
+
+#wp-calendar th {
+	font-style: normal;
+	text-transform: capitalize;
+	}
+/* End Typography & Colors */
+
+
+/* Begin Images */
+p img 
+{
+	padding: 0;
+	max-width: 100%;
+}
+
+/*	Using 'class="alignright"' on an image will (who would've
+	thought?!) align the image to the right. And using 'class="centered',
+	will of course center the image. This is much better than using
+	align="center", being much more futureproof (and valid) */
+
+img.centered 
+{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align:center;
+}
+	
+img.bordered 
+{
+ 	border: 1px solid #cccccc; 
+	padding: 5px;
+}
+
+img.alignright {
+	padding: 4px;
+	margin: 0 0 2px 7px;
+	display: inline;
+	}
+
+img.alignleft {
+	padding: 4px;
+	margin: 0 7px 2px 0;
+	display: inline;
+	}
+
+.alignright {
+	float: right;
+	}
+
+.alignleft {
+	float: left
+	}
+	
+a img 
+{
+	border: none;
+}
+/* End Images */
+
+/*
+h1, h1 a, h1 a:hover, h1 a:visited, #headerimg .description {
+	text-decoration: none;
+	color: white;
+	}
+*/
+h2, h2 a, h2 a:visited, h3, h3 a, h3 a:visited 
+{
+	color: #333;
+}
+
+h2, h2 a, h2 a:hover, h2 a:visited, h3, h3 a, h3 a:hover, h3 a:visited, #sidebar h2, #wp-calendar caption, cite 
+{
+	text-decoration: none;
+}
+
+.entry p a:visited 
+{
+	color: #b85b5a;
+}
+
+#footer {
+	margin: 0 auto;
+	width: 850px;
+	clear: both;
+	}
+
+#footer p {
+	margin: 0;
+	margin-right:250;
+	padding: 20px 0;
+	text-align: center;
+	}
+
+/* Navigation */	
+.navigation 
+{
+	width:550px;
+	height:20px;
+	display: block;
+	text-align: center;
+	font-size:0.8em;
+}
+/*Comments */
+
+.commentlist li, #commentform input, #commentform textarea {
+	font: 0.9em 'Lucida Grande', Verdana, Arial, Sans-Serif;
+	}
+
+.commentlist li {
+	font-weight: bold;
+	}
+
+.commentlist cite, .commentlist cite a {
+	font-weight: bold;
+	font-style: normal;
+	font-size: 1.1em;
+	}
+
+.commentlist p {
+	font-weight: normal;
+	line-height: 1.5em;
+	text-transform: none;
+	}
+
+#commentform p {
+	font-family: 'Lucida Grande', Verdana, Arial, Sans-Serif;
+	}
+
+.commentmetadata {
+	font-weight: normal;
+	}
+
+#sidebar {
+	font: 1em 'Lucida Grande', Verdana, Arial, Sans-Serif;
+	}
+
+small, #sidebar ul ul li, #sidebar ul ol li, .nocomments, .postmetadata, blockquote, strike {
+	color: #777;
+	}
+.alt {
+	margin: 0;
+	padding: 10px;
+	}
+
+.commentlist {
+	padding: 0;
+	text-align: justify;
+	}
+
+.commentlist li {
+	margin: 15px 0 3px;
+	padding: 5px 10px 3px;
+	list-style: none;
+	}
+
+.commentlist p {
+	margin: 10px 5px 10px 0;
+	}
+
+#commentform p {
+	margin: 5px 0;
+	}
+
+.nocomments {
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	}
+
+.commentmetadata {
+	margin: 0;
+	display: block;
+	}
+
+/* Begin Form Elements */
+#searchform {
+	margin: 10px auto;
+	padding: 5px 3px; 
+	text-align: center;
+	}
+
+#sidebar #searchform #s {
+	width: 108px;
+	padding: 2px;
+	}
+
+#sidebar #searchsubmit {
+	padding: 1px;
+	}
+
+.entry form { 
+	text-align:center;
+	}
+
+select {
+	width: 130px;
+	}
+
+#commentform input {
+	width: 170px;
+	padding: 2px;
+	margin: 5px 5px 1px 0;
+	}
+
+#commentform textarea {
+	width: 100%;
+	padding: 2px;
+	}
+
+#commentform #submit {
+	margin: 0;
+	float: right;
+	}
+/* End Form Elements */
+/* */

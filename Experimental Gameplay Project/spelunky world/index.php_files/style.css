@@ -1,0 +1,588 @@
+html {
+  height: 100%;
+  margin-bottom: 1px;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+/** template layout stuff **/
+
+#page_bg {
+	height: 100%; 
+	padding: 0;
+	margin-bottom: 1px;
+	background: #696969 url(images/bg.png) repeat;
+}
+
+#wrapper {
+	margin: 0 auto;
+	position: relative;
+	width: 900px;
+	
+}
+
+#shadow-l {
+	background: url(images/shadow-l.png) 0 0 repeat-y;
+	padding-left: 6px;
+	position: relative;
+}
+
+#shadow-r {
+	background: url(images/shadow-r.png) 100% 0 repeat-y;
+	padding-right: 6px;
+	position: relative;
+}
+
+/* IE hack */
+* html #shadow-l {
+	float: left;
+}
+
+* html #shadow-r {
+	float: right;
+}
+/* END IE hack */
+
+#mainbody {
+	margin: 0;
+	padding: 0 5px 0 5px;
+	background: #ffffff;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+/* No image should have a border when linked */
+a img{
+border: 0;
+}
+/* A quote, perhaps from another post. */
+.quote
+{
+	color: #000000;
+	background-color: #D7DAEC;
+	border: 1px solid #000000;
+	margin: 1px;
+	padding: 1px;
+	font-size: 12px;
+	line-height: 1.4em;
+}
+
+/* A code block - maybe even PHP ;). */
+.code
+{
+	color: #000000;
+	background-color: #dddddd;
+	font-family: "courier new", "times new roman", monospace;
+	font-size: 12px;
+	line-height: 1.3em;
+	/* Put a nice border around it. */
+	border: 1px solid #000000;
+	margin: 1px auto 1px auto;
+	padding: 1px;
+	width: 99%;
+	/* Don't wrap its contents, and show scrollbars. */
+	white-space: nowrap;
+	overflow: auto;
+	/* Stop after about 24 lines, and just show a scrollbar. */
+	max-height: 24em;
+}
+
+/* The "Quote:" and "Code:" header parts... */
+.quoteheader, .codeheader
+{
+	color: #000000;
+	text-decoration: none;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 1.2em;
+}
+
+/* Generally, those [?] icons.  This makes your cursor a help icon. */
+.help
+{
+	cursor: help;
+}
+
+/* The main post box - this makes it as wide as possible. */
+.editor
+{
+	width: 96%;
+}
+
+/* Highlighted text - such as search results. */
+.highlight
+{
+	background-color: yellow;
+	font-weight: bold;
+	color: black;
+}
+
+/* Alternating backgrounds for posts, and several other sections of the forum. */
+.windowbg, tr.windowbg td
+{
+	padding: 5px;
+	background: #EEE;
+	border-bottom: 1px solid #eee;
+}
+.windowbg2,tr.windowbg2 td
+{
+	padding: 5px;
+	background: #fcfcfc;
+	border-bottom: 1px solid #eee;
+}
+.windowbg3,tr.windowbg3 td
+{
+	padding: 5px;
+	background: #f0f0f0;
+}
+
+/* the today container in calendar */
+.calendar_today
+{
+}
+
+/* These are used primarily for titles, but also for headers (the row that says what everything in the table is.) */
+table.nopad .titlebg, tr.titlebg th, tr.titlebg td, .titlebg2, tr.titlebg2 th, tr.titlebg2 td, tr td.titlebg
+{
+	font-size: 100%;
+	font-weight: bold;
+	padding: 4px;
+}
+.titlebg, .titlebg a:link, .titlebg a:visited
+{
+}
+
+.titlebg a:hover
+{
+}
+/* same as titlebg, but used where bold text is not needed */
+.titlebg2 a:link, .titlebg2 a:visited
+{
+}
+
+.titlebg2 a:hover
+{
+}
+.titlebg, .titlebg2{
+	background: #DDD;
+}
+/* This is used for tables that have a grid/border background color (such as the topic listing.) */
+.bordercolor
+{
+  border: 1px solid #CCC;
+}
+
+/* This is used on tables that should just have a border around them. */
+.tborder
+{
+  border: 1px solid #CCC;
+  padding: 1px;
+}
+
+.catbg, .catbg2, .catbg3{
+	background: #efefef url(images/cat-bg.png) 0 -10px repeat-x;
+	border-bottom: 2px solid #CCC;
+}
+/* Default font sizes: small (8pt), normal (10pt), and large (14pt). */
+.smalltext
+{
+	font-size: 11px;
+	font-family: verdana, sans-serif;
+}
+.middletext
+{
+  line-height: 18px;
+  text-indent: 10px;
+}
+.normaltext
+{
+	font-size: 12px;
+}
+.largetext
+{
+	font-size: 14px;
+}
+
+
+/* Posts and personal messages displayed throughout the forum. */
+.post, .personalmessage
+{
+	width: 100%;
+	overflow: auto;
+	line-height: 1.3em;
+}
+
+/* All the signatures used in the forum.  If your forum users use Mozilla, Opera, or Safari, you might add max-height here ;). */
+.signature
+{
+	width: 100%;
+	overflow: auto;
+	padding-bottom: 3px;
+	line-height: 1.3em;
+}
+
+/* Sometimes there will be an error when you post */
+.error{
+color: red;
+}
+
+/* header */
+#header {
+	position: relative;
+	height: 111px;
+	overflow: hidden;
+	background: #232833 url(images/header-bg.png) repeat-x;
+}
+
+#header-l {
+	height: 111px;
+	background: url(images/header-l.png) 0 0 no-repeat;
+	position: relative;
+	padding-left: 16px;
+}
+
+#header-r {
+	height: 111px;
+	background: url(images/header-r.png) 100% 0 no-repeat;
+	position: relative;
+	padding-right: 16px;
+}
+
+#logo-bg, #logo-bg a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width:440px;
+	height: 111px;
+	background: url(images/logo-bg.png) no-repeat;
+	padding: 30px 0 0 30px;
+	color: #999;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	line-height: 24px;
+	font-weight: bold;
+}
+
+#logo, #logo a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width:440px;
+	height: 111px;
+	background: url(images/logo.png) no-repeat;
+	padding: 30px 0 0 30px;
+	color: #999;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	line-height: 24px;
+	font-weight: bold;
+}
+
+#news {
+	height: 80px;
+	padding-top: 15px;
+	overflow: hidden;
+	margin-left: 485px;
+	margin-bottom: 10px;
+	margin-right: 0px;
+	color: #fff;
+}
+
+/* the usercenter (login / avatar "quick user links") */
+#useropts
+{
+	margin: 0 50px 0 0;
+	list-style: none;
+	padding: 0;
+}
+
+.avatar_t
+{
+	height: 65px;
+	width: 65px;
+	border: none;
+}
+
+div.profile_info {
+  margin-left: 80px;
+}
+
+td.smalltext {
+	font-weight: normal;
+}
+
+/* toolbar */
+
+#toolbar {
+	margin: 0;
+	padding: 0;
+	height: 28px;
+	background: url(images/toolbar-bg.png) repeat-x;
+	position: relative;
+}
+
+/* menu */
+#nav {
+	margin: 0 0 0 20px;
+	padding: 0;
+	height: 28px;
+	background: url(images/toolbar-div.png) 0 0 no-repeat;
+}
+
+#nav ul {
+	padding: 0;
+	margin: 0;
+}
+
+#nav li {
+	margin: 0;
+	padding: 0;
+	float: left;
+	display: block;
+	background: url(images/toolbar-div.png) 100% 0 no-repeat;
+}
+
+#nav a {
+	text-decoration: none;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+#nav li a {
+	display: block;
+	float: left;
+	height: 28px;
+	line-height: 28px;
+	padding: 0px 15px 0 15px;
+	color: #999;
+}
+
+#nav a:hover {
+	color: #eee;
+	background: #F4B12C url(images/hover-bg.png) 0 0 repeat-x;
+}
+
+#nav a:active {
+	color: #333;
+}
+
+/* showcase */
+
+#showcase {
+	background: #fff;
+	color: #444;
+	padding: 0;
+	margin: 0;
+}
+
+#showcase ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#showcase li {
+		border-bottom: 1px dotted #b7bbc7;
+		padding-bottom: 0;
+		margin-bottom: 2px;
+}
+
+.userinfo {
+	background: #fff url(images/showcase-bgl.png) 100% 0 no-repeat;
+	width: 350px;
+	float: left;
+	padding: 10px 0 10px 10px;
+}
+
+.searchfield {
+	background: #fff;
+	text-align: right;
+	padding: 15px 20px 10px 5px;
+}
+
+/* footer (smf copyright) */
+
+#footer {
+	margin: 0;
+	padding: 40px 0 0 30px;
+	background: url(images/footer-bg.png) repeat-x;
+	height: 83px;
+	color: #eee;
+	text-align: center;
+}
+
+#footer-l {
+	background: url(images/footer-bgl.png) 0 0 no-repeat;
+	height: 83px;
+	padding-left: 251px;
+}
+
+#footer-r {
+	background: url(images/footer-bgr.png) 100% 0 no-repeat;
+	height: 83px;
+	padding-right: 49px;
+}
+
+#footer a {
+  color: #fff;
+}
+
+#footer a:hover {
+	color: #000;
+}
+
+/* footer2 */
+
+#footer2 {
+	margin: 0 30px 10px 0;
+	text-align: right;
+	color: #999;
+}
+
+span.pathway {
+	display: block;
+	height: 16px;
+	line-height: 16px;
+	vertical-align: middle;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+
+span.pathway img {
+	margin: 0px 10px;
+	vertical-align: middle;
+}
+
+div#pathway {
+	margin-bottom: 10px;
+	padding-left: 8px;
+}
+
+fieldset {
+	border: 0;
+	padding: 5px 0;
+}
+
+/*** fonts ***/
+body {
+		line-height: 125%;
+		font-family: Verdana, Helvetica, sans-serif;
+		color: #4444444;
+		font-size: 12px;
+}
+
+a {
+	color: #0060B7;
+}
+
+a:hover {
+	color: #000;
+}
+
+.small,
+.modifydate,
+.createdate,
+div.mosimage_caption {
+	font-size: 100%;
+}
+
+#nav a,
+#inset a {
+	font-size: 110%;
+}
+
+
+/* font family */
+#nav,
+span.pathway,
+.small,
+.createdate,
+.modifydate,
+#inset {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+
+a:link,
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+/* headings */
+
+h1 {
+	padding-bottom: 5px;
+}
+
+h2 {
+   padding-bottom: 5px;
+}
+
+h3 { 
+   padding-bottom: 0px;
+}
+
+h4 {
+	 padding-bottom: 5px;
+}
+
+.small {
+	font-weight: bold;
+	color: #999;
+}
+
+.modifydate {
+	height: 20px;
+	vertical-align: bottom;
+	font-weight: bold;
+	color: #999;
+}
+
+.createdate {
+	height: 20px;
+	vertical-align: top;
+	font-weight: bold;
+	vertical-align: top;
+	padding-bottom: 5px;
+	padding-top: 0px;
+	color: #999;
+}
+
+.clr {
+	clear: both;
+}
+
+form {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+/* The AJAX notifier */
+#ajax_in_progress
+{
+	background: #32CD32;
+	color: white;
+	text-align: center;
+	font-weight: bold;
+	font-size: 18pt;
+	padding: 3px;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
